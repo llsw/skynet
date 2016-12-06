@@ -1,42 +1,25 @@
-## Skynet
+## 下载
 
-Skynet is a lightweight online game framework, and it can be used in many other fields.
+git clone https://github.com/interfacekun/skynet.git
 
-## Build
 
-For Linux, install autoconf first for jemalloc:
-
-```
-git clone https://github.com/cloudwu/skynet.git
+## 编译
 cd skynet
-make 'PLATFORM'  # PLATFORM can be linux, macosx, freebsd now
-```
+make 'PLATFORM'  # PLATFORM 可以是 linux, macosx, freebsd now
 
-Or you can:
 
-```
+#或者
+
 export PLAT=linux
 make
-```
 
-For FreeBSD , use gmake instead of make.
 
-## Test
+对于FreeBSD , 使用 gmake 代替 make.
 
-Run these in different consoles:
+## 测试
 
-```
-./skynet examples/config	# Launch first skynet node  (Gate server) and a skynet-master (see config for standalone option)
-./3rd/lua/lua examples/client.lua 	# Launch a client, and try to input hello.
-```
+## 在不同的控制运行下面的命令
 
-## About Lua version
+./skynet sprj/sgateconfig	
+./3rd/lua/lua sprj/client/client.lua 	
 
-Skynet now uses a modified version of lua 5.3.3 ( https://github.com/ejoy/lua/tree/skynet ) for multiple lua states.
-
-You can also use official Lua versions, just edit the Makefile by yourself.
-
-## How To Use (Sorry, Only in Chinese now)
-
-* Read Wiki for documents https://github.com/cloudwu/skynet/wiki
-* The FAQ in wiki https://github.com/cloudwu/skynet/wiki/FAQ
