@@ -14,7 +14,11 @@ export PLAT=linux
 make
 
 
-对于FreeBSD , 使用 gmake 代替 make.
+##对于FreeBSD , 使用 gmake 代替 make
+
+## 装好redis,用redis-cli sprj/redis/redis1.conf 开启redis
+## 装好mysql数据库, 并启动mysql数据库
+## redis、mysql连接的配置都在sprj/config/sgateconfig中
 
 ## 测试
 
