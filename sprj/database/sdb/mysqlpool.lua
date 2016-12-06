@@ -4,6 +4,7 @@ local mysql = require "mysql"
 
 local CMD = {}
 local pool = {}
+local maxconn
 
 function CMD.start()
 	maxconn = tonumber(skynet.getenv("mysql_maxconn")) or 8
@@ -36,6 +37,30 @@ function CMD.start()
 		end
 
 	end
+end
+
+local function getconn(dbn)
+	local db
+	if not dbn or maxconn == 1 then
+		db = pool[1]
+		assert(db, "there isn't this db in pool")
+	else
+		db = pool[dbn]
+		assert(db, "there isn't this db in pool")
+	end
+	return db
+end
+
+function CMD.execute(sql, dbn)
+	local db = getconn(dbn)
+	return db:query(sql)
+end
+
+function CMD.stop()
+	for _, db in pairs(pool) do
+		db:disconnect()
+	end
+	pool = {}
 end
 
 skynet.start(function()
