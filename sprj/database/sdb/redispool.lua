@@ -35,9 +35,18 @@ function getconn(dbn)
 	local db
 	if not dbn or maxconn == 1 then
 		db = pool[1]
-		assert(db, "there isn't this db in pool")
+
+		if not db then
+			LOG_EORR("there isn't this db[%d] in pool", 1)
+		end
+		assert(db, "there isn't this db[1] in pool")
 	else
-		db = pool[dbn]
+		local nu = dbn % maxconn + 1
+		db = pool[nu]
+		if not db then
+			LOG_EORR("there isn't this db[%d] in pool", nu)
+		end
+		assert(db, "there isn't this db[" .. nu .. "] in pool")
 	end
 
 	return db
@@ -183,7 +192,6 @@ function CMD.del(dbn, key)
 	return result
 end
 	
-end
 
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, cmd, ...)
