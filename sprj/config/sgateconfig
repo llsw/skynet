@@ -7,7 +7,7 @@ harbor = 0 -- 单节点不需要
 --master = "ip:port"  -- 单节点不需要
 bootstrap = "snlua bootstrap" -- skynet节点起动脚本
 --standalone= "ip:port" -- 单节点不不需要开启控制中心
-luaservice = root.."service/?.lua;"..root.."test/?.lua;"..root.."examples/?.lua;"..root.."sprj/database/sdb/?.lua;"..root.."sprj/protocol/?.lua;"..root.."sprj/main/?.lua;"..root.."sprj/service/?.lua;" --luaservice脚本路径
+luaservice = root.."service/?.lua;"..root.."sprj/database/sdb/?.lua;"..root.."sprj/protocol/?.lua;"..root.."sprj/main/?.lua;"..root.."sprj/service/?.lua;" --luaservice脚本路径
 lualoader = root .. "lualib/loader.lua" --lua脚本加载路径
 
 preload = root.."sprj/preload/preload.lua"

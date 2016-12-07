@@ -1,3 +1,5 @@
+--package.cpath = "luaclib/?.so"
+--package.path = "lualib/?.lua;sprj/protocol/?.lua"
 local skynet = require "skynet"
 local netpack = require "netpack"
 local socket = require "socket"
@@ -34,9 +36,10 @@ function REQUEST:quit()
 end
 function REQUEST:login()
 	--skynet.error(self.username, self.password)
-	local r = skynet.call(mysqlservice[client_fd], "lua", "login", 
-		{ username=self.username, password=self.password})
-	if r=="success" then
+	local sql = string.format("select * from user where username='%s' and password='%s'",
+		self.username, self.password)
+	local r = mysql_query(sql, client_fd)
+	if #r > 0 then
 		return { result = "登录成功!", error=0 }
 	else
 		return { result = "登录失败!", error=1 }
@@ -95,8 +98,8 @@ function CMD.start(conf)
 	skynet.error("a sagent start")
 	skynet.error("\n")
 	skynet.call(gate, "lua", "forward", fd)
-	skynet.error("mysql database service start")
-	mysqlservice[fd] = skynet.newservice("smysql")
+	--skynet.error("mysql database service start")
+	--mysqlservice[fd] = skynet.newservice("smysql")
 	
 end
 
