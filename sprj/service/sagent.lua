@@ -46,6 +46,27 @@ function REQUEST:login()
 	end
 end
 
+function REQUEST:transfer_table()
+	local tt = self.tt
+	local tti = self.tti
+	skynet.error("type(tti)", type(tti))
+	for k, v in ipairs(tti) do
+		skynet.error(k, v)
+	end
+	for _, row in pairs(tt) do
+		skynet.error("row.number", row.number, "row.color", row.color)
+	end
+end
+
+function REQUEST:pvp()
+	local r = skynet.call("pvp", "lua", "add", client_fd)
+	if r == 0 then
+		return {result="add queue success", error=r }
+	else
+		return {result="add queue fail", error=r }
+	end
+end
+
 local function request(name, args, response)
 	local f = assert(REQUEST[name])
 	local r = f(args)

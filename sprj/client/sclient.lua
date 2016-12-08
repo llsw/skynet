@@ -108,32 +108,44 @@ end
 -- local username = io.read()
 -- print(username)
 
-print("用户名:")
-local username = socket.readstdin()
-while(not username) do
-	username = socket.readstdin()
-	socket.usleep(100)
-end
+-- print("用户名:")
+-- local username = socket.readstdin()
+-- while(not username) do
+-- 	username = socket.readstdin()
+-- 	socket.usleep(100)
+-- end
 
-print("密码:")
-local password = socket.readstdin()
-while(not password) do
-	password = socket.readstdin()
-	socket.usleep(100)
-end
-login(username, password)
+-- print("密码:")
+-- local password = socket.readstdin()
+-- while(not password) do
+-- 	password = socket.readstdin()
+-- 	socket.usleep(100)
+-- end
+-- login(username, password)
 
- 
-while true do
-	dispatch_package()
-	local cmd = socket.readstdin()
-	if cmd then
-		if cmd == "quit" then
-			send_request("quit")
-		else
-			send_request("get", { what = cmd })
-		end
-	else
-		socket.usleep(100)
-	end
-end
+-- local tt = {
+-- 	{number = 1, color="黑桃"},
+-- 	{number = 1, color="红桃"}
+-- }
+
+--send_request("transfer_table",{tt=tt, tti={5,6,7,8}})
+
+send_request("pvp")
+
+-- while true do
+-- 	dispatch_package()
+-- 	local cmd = socket.readstdin()
+-- 	if cmd then
+-- 		if cmd == "quit" then
+-- 			send_request("quit")
+-- 		else
+-- 			send_request("get", { what = cmd })
+-- 		end
+-- 	else
+-- 		socket.usleep(100)
+-- 	end
+-- end
+
+-- while true do
+-- 	socket.usleep(700)
+-- end

@@ -31,6 +31,9 @@ skynet.start(function ()
   	local mysqlpool = skynet.uniqueservice("mysqlpool")
   	skynet.call(mysqlpool, "lua", "start")
 
+  	local pvp  = skynet.uniqueservice("pvp")
+  	skynet.call(pvp, "lua", "start")
+
   	skynet.error([[*━━━━━━神兽出没━━━━━━]])
  	skynet.error([[* 　　 ┏┓　 ┏┓]])
  	skynet.error([[* 　　┏┛┻━━━┛┻┓]])

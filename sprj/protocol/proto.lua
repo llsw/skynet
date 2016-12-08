@@ -53,6 +53,26 @@ login 6 {
 	}
 }
 
+transfer_table 7 {
+	request {
+
+		.cart {
+			number 0 : integer
+			color 1 : string
+		}
+
+		tt 0 : *cart
+		tti 1 : *integer
+	}
+}
+
+pvp 8 {
+	response {
+		result 0 : string
+		error 1 : integer
+	}
+}
+
 ]]
 
 proto.s2c = sprotoparser.parse [[
