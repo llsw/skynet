@@ -57,7 +57,7 @@ skynet.start(function ()
 	local maxnumber = skynet.getenv  "roommaxnumber"
 	local address = skynet.getenv "roomaddress"
 	local port = skynet.getenv "roomport"
-	local maxclient = skynet.getenv "roommaxclient"
+	local maxclient = tonumber(skynet.getenv "roommaxclient")
 	local nodelay = skynet.getenv "roomnodelay"
 	
 

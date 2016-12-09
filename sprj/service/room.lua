@@ -24,13 +24,11 @@ function CMD.start(source, conf)
 	socket = socketdriver.listen(address, port)
 	socketdriver.start(socket)
 	skynet.error(string.format("Room[%d] listen on %s:%d", room_number, address, port))
-	LOG_INFO("Room[%d] listen on %s:%d", room_number, address, port)
+	--LOG_INFO("Room[%d] listen on %s:%d", room_number, address, port)
 	local service_name = "room_" .. room_number
 	skynet.register(service_name)
 	skynet.error("room service name is %s", service_name)
-
-	
-
+	return "start"
 end
 
 function CMD.getRoomAddress()
@@ -45,8 +43,9 @@ local function openclient(fd)
 		socketdriver.start(fd)
 		client_number = client_number + 1
 
-		LOG_INFO("Client come in")
+		
 		skynet.error("Client come in")
+		--LOG_INFO("Client come in")
 
 	end
 end
@@ -60,6 +59,7 @@ local function close_fd(fd)
 end
 
 function MSG.open(fd, msg)
+	skynet.error("Client ask open socket")
 	if client_number >= maxclient then
 		socketdriver.close(fd)
 		return
@@ -78,7 +78,7 @@ function MSG.close(fd)
 		
 		close_fd(fd)
 
-		LOG_INFO("Client disconnect")
+		--LOG_INFO("Client disconnect")
 		skynet.error("Client disconnect")
 	else
 		socket = nil

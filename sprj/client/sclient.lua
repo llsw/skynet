@@ -15,6 +15,7 @@ local host = sproto.new(proto.s2c):host "package"
 local request = host:attach(sproto.new(proto.c2s))
 
 local fd = assert(socket.connect("127.0.0.1", 8889))
+local connect_room_fd 
 
 local function send_package(fd, pack)
 	local package = string.pack(">s2", pack)
@@ -115,6 +116,7 @@ function REQUEST:connect_room()
 	print("room_name:", room_name)
 	print("room address:", address)
 	print("room port:", port)
+	connect_room_fd = assert(socket.connect(address, port))
 end
 
 function login(username, password)
