@@ -59,6 +59,7 @@ function REQUEST:transfer_table()
 end
 
 function REQUEST:pvp()
+	skynet.error("handler pvp ")
 	local r = skynet.call("pvp", "lua", "add", client_fd)
 	if r == 0 then
 		return {result="add queue success", error=r }
@@ -70,7 +71,9 @@ end
 local function request(name, args, response)
 	local f = assert(REQUEST[name])
 	local r = f(args)
+	skynet.error("dddddddddd",type(r))
 	if response then
+		skynet.error("dddddddddd",type(response(r)))
 		return response(r)
 	end
 end
@@ -127,6 +130,6 @@ end
 skynet.start(function()
 	skynet.dispatch("lua", function(_,_, command, ...)
 		local f = CMD[command]
-		skynet.ret(skynet.pack(f(...)))
+		skynet.ret(f(...))
 	end)
 end)

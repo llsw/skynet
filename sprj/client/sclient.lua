@@ -9,6 +9,8 @@ local socket = require "clientsocket"
 local proto = require "proto"
 local sproto = require "sproto"
 
+local REQUEST = {}
+
 local host = sproto.new(proto.s2c):host "package"
 local request = host:attach(sproto.new(proto.c2s))
 
@@ -77,8 +79,16 @@ local function print_response(session, args)
 	end
 end
 
-local function print_package(t, ...)
+local function request(name, args, response)
+	local f = assert(REQUEST[name])
+	local r = f(args)
+end
+
+local function handler_package(t, ...)
 	if t == "REQUEST" then
+
+		local ok, result  = pcall(request, ...)
+
 		print_request(...)
 	else
 		assert(t == "RESPONSE")
@@ -94,10 +104,18 @@ local function dispatch_package()
 			break
 		end
 
-		print_package(host:dispatch(v))
+		handler_package(host:dispatch(v))
 	end
 end
 
+function REQUEST:connect_room()
+	local address = self.address
+	local port = self.port
+	local room_name = self.room_name
+	print("room_name:", room_name)
+	print("room address:", address)
+	print("room port:", port)
+end
 
 function login(username, password)
 	
@@ -123,29 +141,29 @@ end
 -- end
 -- login(username, password)
 
--- local tt = {
--- 	{number = 1, color="黑桃"},
--- 	{number = 1, color="红桃"}
--- }
+local tt = {
+	{number = 1, color="黑桃"},
+	{number = 1, color="红桃"}
+}
 
---send_request("transfer_table",{tt=tt, tti={5,6,7,8}})
+send_request("transfer_table",{tt=tt, tti={5,6,7,8}})
 
 send_request("pvp")
 
--- while true do
--- 	dispatch_package()
--- 	local cmd = socket.readstdin()
--- 	if cmd then
--- 		if cmd == "quit" then
--- 			send_request("quit")
--- 		else
--- 			send_request("get", { what = cmd })
--- 		end
--- 	else
--- 		socket.usleep(100)
--- 	end
--- end
+while true do
+	dispatch_package()
+	local cmd = socket.readstdin()
+	if cmd then
+		if cmd == "quit" then
+			send_request("quit")
+		else
+			send_request("get", { what = cmd })
+		end
+	else
+		socket.usleep(100)
+	end
+end
 
--- while true do
--- 	socket.usleep(700)
--- end
+while true do
+	socket.usleep(700)
+end

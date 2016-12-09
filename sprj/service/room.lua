@@ -9,21 +9,38 @@ local connection = {}
 local socket
 local queue	
 local MSG = {}
+local CMD = {}
+local room_number
+local address
+local port
 
-function CMD.start( source, conf )
+function CMD.start(source, conf)
 	assert(not socket)
-	local address = conf.address or "0.0.0.0"
-	local port = assert(conf.port)
+	address = conf.address or "0.0.0.0"
+	port = assert(conf.port)
 	maxclient = conf.maxclient or 1024
 	nodelay = conf.nodelay
+	room_number = conf.number
 	socket = socketdriver.listen(address, port)
 	socketdriver.start(socket)
-	skynet.error(string.format("Room listen on %s:%d", address, port))
-	LOG_INFO("Room listen on %s:%d", address, port)
+	skynet.error(string.format("Room[%d] listen on %s:%d", room_number, address, port))
+	LOG_INFO("Room[%d] listen on %s:%d", room_number, address, port)
+	local service_name = "room_" .. room_number
+	skynet.register(service_name)
+	skynet.error("room service name is %s", service_name)
+
+	
 
 end
 
-function openclient(fd)
+function CMD.getRoomAddress()
+	return address
+end
+function CMD.getRoomPort()
+	return port
+end
+
+local function openclient(fd)
 	if connection[fd] then
 		socketdriver.start(fd)
 		client_number = client_number + 1
@@ -130,7 +147,6 @@ skynet.register_protocol {
 skynet.start(function ()
 	skynet.dispatch("lua",function(session, source, cmd, ...)
 		local  f = assert(CMD[cmd], cmd .. "not found")
-		f(source, ...)
+		skynet.retpack(f(source, ...))
 	end)
-	skynet.register(SREVICE_NAME)
 end)

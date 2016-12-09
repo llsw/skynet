@@ -1,6 +1,6 @@
 #!/bin/bash
 ans=0
-for i in {1..1200}
+for i in {1..9}
 do
-    3rd/lua/lua sprj/client/sclient.lua 
+    nohup 3rd/lua/lua sprj/client/sclient.lua &
 done

@@ -89,6 +89,14 @@ test 2 {
 	}
 }
 
+connect_room 3 {
+	request {
+		address 0 : string
+		port 1 : integer
+		room_name 2 : string 
+	}
+}
+
 ]]
 
 return proto

@@ -104,7 +104,10 @@ local function monitor_slave(slave_id, slave_address)
 	for k,v in pairs(slave_node) do
 		socket.write(v.fd, message)
 	end
+
 	socket.close(fd)
+	--table.remove(slave_node, slave_id)
+
 end
 
 skynet.start(function()
