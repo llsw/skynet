@@ -1,7 +1,12 @@
 local skynet = require "skynet"
 local netpack = require "netpack"
+local csoeckt = require "socket"
 local socketdriver = require "socketdriver"
 require "skynet.manager"
+local sproto = require "sproto"
+local sprotoloader = require "sprotoloader"
+
+
 
 local client_number = 0
 local nodelay = false
@@ -13,6 +18,11 @@ local CMD = {}
 local room_number
 local address
 local port
+local host
+local send_request
+
+
+
 
 function CMD.start(source, conf)
 	assert(not socket)
@@ -38,15 +48,19 @@ function CMD.getRoomPort()
 	return port
 end
 
+local function send_package(fd, pack)
+	local package = string.pack(">s2", pack)
+	csocket.write(fd, package)
+end
+
 local function openclient(fd)
 	if connection[fd] then
 		socketdriver.start(fd)
 		client_number = client_number + 1
-
-		
-		skynet.error("Client come in")
+		skynet.error("Client[%d] come in", fd)
 		--LOG_INFO("Client come in")
-
+		send_package(fd,send_request("s2cinfo", 
+		{info = string.format("Welcome to game room[%d]", room_number)}))
 	end
 end
 
@@ -59,7 +73,7 @@ local function close_fd(fd)
 end
 
 function MSG.open(fd, msg)
-	skynet.error("Client ask open socket")
+	skynet.error("Client[%d] ask open socket", fd)
 	if client_number >= maxclient then
 		socketdriver.close(fd)
 		return
@@ -143,6 +157,9 @@ skynet.register_protocol {
 		end
 	end
 }
+host = sprotoloader.load(1):host "package"
+send_request = host:attach(sprotoloader.load(2))
+
 
 skynet.start(function ()
 	skynet.dispatch("lua",function(session, source, cmd, ...)

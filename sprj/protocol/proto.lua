@@ -97,6 +97,12 @@ connect_room 3 {
 	}
 }
 
+s2cinfo 4 {
+	request {
+		info 0 : string
+	}
+}
+
 ]]
 
 return proto

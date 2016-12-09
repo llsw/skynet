@@ -119,6 +119,12 @@ function REQUEST:connect_room()
 	connect_room_fd = assert(socket.connect(address, port))
 end
 
+function REQUEST:s2cinfo()
+	local info = self.info
+	print(info)
+end
+
+
 function login(username, password)
 	
 	send_request("login", { username = username, password = password })
