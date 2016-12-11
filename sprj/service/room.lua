@@ -1,6 +1,6 @@
 local skynet = require "skynet"
 local netpack = require "netpack"
-local csoeckt = require "socket"
+--local csoeckt = require "socket"
 local socketdriver = require "socketdriver"
 require "skynet.manager"
 local sproto = require "sproto"
@@ -59,8 +59,8 @@ local function openclient(fd)
 		client_number = client_number + 1
 		skynet.error("Client[%d] come in", fd)
 		--LOG_INFO("Client come in")
-		send_package(fd,send_request("s2cinfo", 
-		{info = string.format("Welcome to game room[%d]", room_number)}))
+		--send_package(fd,send_request("s2cinfo", 
+		--{info = string.format("Welcome to game room[%d]", room_number)}))
 	end
 end
 
