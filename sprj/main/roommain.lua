@@ -62,12 +62,11 @@ skynet.start(function ()
 	
 
 	for i=1, maxnumber do
-		local room = skynet.newservice("room")
-		skynet.call(room, "lua", "start", 
+		local room = skynet.newservice("sroom")
+		skynet.call(room, "lua", "open", 
 		{
 			address = address,
 		 	port = port, 
-		 	maxclient = maxclient,
 		 	maxclient = maxclient,
 		 	nodelay = nodelay,
 		 	number = i,

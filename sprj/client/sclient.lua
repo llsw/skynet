@@ -17,6 +17,7 @@ local request = host:attach(sproto.new(proto.c2s))
 local fd = assert(socket.connect("127.0.0.1", 8889))
 local connect_room_fd 
 
+
 local function send_package(fd, pack)
 	local package = string.pack(">s2", pack)
 	socket.send(fd, package)
@@ -99,13 +100,12 @@ end
 
 local function dispatch_package()
 	while true do
-		local v
+		local v 
 		v, last = recv_package(last)
 		if not v then
 			break
 		end
-
-		handler_package(host:dispatch(v))
+		handler_package(host:dispatch(v))	
 	end
 end
 
@@ -117,6 +117,8 @@ function REQUEST:connect_room()
 	print("room address:", address)
 	print("room port:", port)
 	connect_room_fd = assert(socket.connect(address, port))
+	
+	fd = connect_room_fd
 end
 
 function REQUEST:s2cinfo()
