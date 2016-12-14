@@ -45,7 +45,7 @@ function handler.message(fd, msg, sz)
 	local client = c.client
 
 
-	skynet.error("Sgate receive msg, come from client", fd)
+	skynet.error("Sgate receive msg, come from client", fd, c.client)
 	skynet.error("Agent", c.agent, "begin handler a msg")
 
 	if agent then

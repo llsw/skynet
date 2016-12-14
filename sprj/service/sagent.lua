@@ -71,9 +71,9 @@ end
 local function request(name, args, response)
 	local f = assert(REQUEST[name])
 	local r = f(args)
-	skynet.error("dddddddddd",type(r))
+	skynet.error("request args type",type(args))
 	if response then
-		skynet.error("dddddddddd",type(response(r)))
+		--skynet.error("dddddddddd",type(response(r)))
 		return response(r)
 	end
 end

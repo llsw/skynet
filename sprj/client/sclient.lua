@@ -159,6 +159,7 @@ local tt = {
 send_request("transfer_table",{tt=tt, tti={5,6,7,8}})
 
 send_request("pvp")
+-- print(string.format("client msg fd[%d]", fd))
 
 while true do
 	dispatch_package()
@@ -167,7 +168,7 @@ while true do
 		if cmd == "quit" then
 			send_request("quit")
 		else
-			send_request("get", { what = cmd })
+			send_request(cmd)
 		end
 	else
 		socket.usleep(100)

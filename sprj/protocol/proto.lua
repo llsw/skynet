@@ -73,6 +73,23 @@ pvp 8 {
 	}
 }
 
+ready 9 {
+	request {
+		session 0 : integer
+	}
+	response {
+		info 0 : string
+		error_code 1 : integer
+	}	
+}
+
+cancel_ready 10 {
+	response {
+		info 0 : string
+		error_code 1 : integer
+	}	
+}
+
 ]]
 
 proto.s2c = sprotoparser.parse [[

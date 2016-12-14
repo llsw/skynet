@@ -23,6 +23,12 @@ local room_agent
 -- 	socketdriver.send(fd, package)
 -- end
 
+skynet.register_protocol {
+	name = "room_msg",
+	id = 13,
+
+}
+
 function handler.open(source,conf)
 	room_address = conf.address
 	room_port = conf.port
@@ -38,22 +44,27 @@ function handler.open(source,conf)
 end
 
 function handler.message(fd, msg, sz)
-	
+	skynet.error(string.format("msg fd[%d]", fd))
+	skynet.redirect(room_agent, 1, "room_msg", fd, msg, sz)
 end
 
 function handler.connect(fd, addr)
 
 	gateserver.openclient(fd)
 	connection[fd] = fd
-	skynet.error("Client[%d] come in", fd)
+	skynet.call(room_agent, "lua", "add_team", fd)
+	skynet.error(string.format("Client[%d] come in", fd))
 	local cmd = "s2cinfo"
 	local msg = {info = string.format("Welcome to game room[%d]", room_number)}
 	skynet.call(room_agent, "lua", "send_request", fd, cmd, msg)	
 	--send_package(fd, send_request(cmd, msg))
+
 end
 
 function handler.disconnect(fd)
 	connection[fd] = nil
+	skynet.error(string.format("Client fd[%d] disconnect", fd))
+	skynet.call(room_agent, "lua", "exit_team", fd)
 end
 
 function handler.error(fd, msg)
