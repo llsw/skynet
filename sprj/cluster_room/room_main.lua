@@ -50,7 +50,7 @@ skynet.start(function ()
 	end)
 
 	cluster.open("cluster_room")
-	cluster.register("cluster_room")
+	--cluster.register("cluster_room")
 	skynet.register("room_main")
 
 	skynet.uniqueservice("protoloader")

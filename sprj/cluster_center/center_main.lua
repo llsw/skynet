@@ -7,7 +7,7 @@ local max_client = 60
 
 skynet.start(function ()
 	cluster.open("cluster_center")
-	cluster.register("cluster_center")
+	--cluster.register("cluster_center")
 	skynet.register("center_main")
 	local log = skynet.uniqueservice("log")
 	skynet.call(log, "lua", "start")
@@ -21,7 +21,7 @@ skynet.start(function ()
 	end
 	skynet.newservice("debug_console",8000)
 
-	local gate = skynet.newservice("gate")
+	local gate = skynet.newservice("gateway")
 	skynet.call(gate, "lua", "open", {
 			port = 8889,
 			maxclient = max_client,
@@ -65,7 +65,7 @@ skynet.start(function ()
  	-- 	skynet.error("key:", k)
  	-- 	skynet.error("row.id:", row.id, "row.uid", row.uid)
  	-- end
-	skynet.exit()
+	--skynet.exit()
 
 end
 )

@@ -53,7 +53,7 @@ function handler.connect(fd, addr)
 
 	gateserver.openclient(fd)
 	connection[fd] = fd
-	skynet.call(room_agent, "lua", "add_team", fd)
+	skynet.call(agent, "lua", "add_team", fd)
 	skynet.error(string.format("Client[%d] come in", fd))
 	local cmd = "s2cinfo"
 	local msg = {info = string.format("Welcome to game room[%d]", room_number)}

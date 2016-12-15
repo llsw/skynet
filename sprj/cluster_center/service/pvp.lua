@@ -59,9 +59,9 @@ function remove()
 			table.insert(team, fd)
 		end
 		local room_main = cluster.proxy("cluster_room", "room_main")
-		local proxy_address = cluster.query("cluster_room", "room_main")
-		skynet.error(string.format("node[%s] server[%s] address[%s]", 
-			"cluster_room", "room_main", proxy_address))
+		--local proxy_address = cluster.query("cluster_room", "room_main")
+		--skynet.error(string.format("node[%s] server[%s] address[%s]", 
+		--	"cluster_room", "room_main", proxy_address))
 		local room_name = skynet.call(room_main, "lua", "getRoom")
 		skynet.error("roommain ok ", ok)
 		
