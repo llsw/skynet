@@ -6,9 +6,9 @@ require "skynet.manager"
 local max_client = 60
 
 skynet.start(function ()
-	cluster.open("sgatemain")
-	cluster.register("sgatemain")
-	skynet.register("sgatemain")
+	cluster.open("cluster_center")
+	cluster.register("cluster_center")
+	skynet.register("center_main")
 	local log = skynet.uniqueservice("log")
 	skynet.call(log, "lua", "start")
 
@@ -21,14 +21,13 @@ skynet.start(function ()
 	end
 	skynet.newservice("debug_console",8000)
 
-	local sgate = skynet.newservice("sgate")
-	skynet.call(sgate, "lua", "open", {
+	local gate = skynet.newservice("gate")
+	skynet.call(gate, "lua", "open", {
 			port = 8889,
 			maxclient = max_client,
 			nodelay = true,
 		})
-	skynet.error("SGate listen on", 8889)
-	skynet.error("sgate", sgate)
+	skynet.error("Gate listen on", 8889)
 
  	local redispool = skynet.uniqueservice("redispool")
   	skynet.call(redispool, "lua", "start")
@@ -66,7 +65,7 @@ skynet.start(function ()
  	-- 	skynet.error("key:", k)
  	-- 	skynet.error("row.id:", row.id, "row.uid", row.uid)
  	-- end
-	--skynet.exit()
+	skynet.exit()
 
 end
 )

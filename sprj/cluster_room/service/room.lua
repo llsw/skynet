@@ -15,7 +15,7 @@ local room_port
 
 local room_number
 
-local room_agent
+local agent
 -- local host
 -- local send_request
 
@@ -39,14 +39,14 @@ function handler.open(source,conf)
 	skynet.error("room service name is %s", service_name)
 	-- host = sprotoloader.load(1):host "package"
 	-- send_request = host:attach(sprotoloader.load(2))
-	room_agent = skynet.newservice("room_agent")
-	skynet.call(room_agent, "lua", "start", room_number)
+	agent = skynet.newservice("agent")
+	skynet.call(agent, "lua", "start", room_number)
 	return "start"
 end
 
 function handler.message(fd, msg, sz)
 	skynet.error(string.format("msg fd[%d]", fd))
-	skynet.redirect(room_agent, 1, "room_msg", fd, msg, sz)
+	skynet.redirect(agent, 1, "room_msg", fd, msg, sz)
 end
 
 function handler.connect(fd, addr)
@@ -57,7 +57,7 @@ function handler.connect(fd, addr)
 	skynet.error(string.format("Client[%d] come in", fd))
 	local cmd = "s2cinfo"
 	local msg = {info = string.format("Welcome to game room[%d]", room_number)}
-	skynet.call(room_agent, "lua", "send_request", fd, cmd, msg)	
+	skynet.call(agent, "lua", "send_request", fd, cmd, msg)	
 	--send_package(fd, send_request(cmd, msg))
 
 end
@@ -65,7 +65,7 @@ end
 function handler.disconnect(fd)
 	connection[fd] = nil
 	skynet.error(string.format("Client fd[%d] disconnect", fd))
-	skynet.call(room_agent, "lua", "exit_team", fd)
+	skynet.call(agent, "lua", "exit_team", fd)
 end
 
 function handler.error(fd, msg)

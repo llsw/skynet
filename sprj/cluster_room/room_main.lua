@@ -49,6 +49,10 @@ skynet.start(function ()
 		skynet.retpack(f(...))
 	end)
 
+	cluster.open("cluster_room")
+	cluster.register("cluster_room")
+	skynet.register("room_main")
+
 	skynet.uniqueservice("protoloader")
 	if not skynet.getenv "daemon" then
 		local console = skynet.newservice("console")
@@ -63,7 +67,7 @@ skynet.start(function ()
 	
 
 	for i=1, maxnumber do
-		local room = skynet.newservice("sroom")
+		local room = skynet.newservice("room")
 		skynet.call(room, "lua", "open", 
 		{
 			address = address,
@@ -89,9 +93,7 @@ skynet.start(function ()
 			skynet.error("start [room %d] success", i)
 		end
 	end
-	cluster.open("roommain")
-	cluster.register("roommain")
-	skynet.register("roommain")
+	
 	local server_address = skynet.self()
 	local server_address_name = skynet.address(server_address)
 	skynet.error(string.format("address[%d] name[%s]", server_address, server_address_name))

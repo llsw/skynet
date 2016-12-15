@@ -58,17 +58,17 @@ function remove()
 			exist_queue[fd] = nil
 			table.insert(team, fd)
 		end
-		local roommain_service = cluster.proxy("roommain", "roommain")
-		local proxy_address = cluster.query("roommain", "roommain")
+		local room_main = cluster.proxy("cluster_room", "room_main")
+		local proxy_address = cluster.query("cluster_room", "room_main")
 		skynet.error(string.format("node[%s] server[%s] address[%s]", 
-			"roommain", "roommain", proxy_address))
-		local room_name = skynet.call(roommain_service, "lua", "getRoom")
+			"cluster_room", "room_main", proxy_address))
+		local room_name = skynet.call(room_main, "lua", "getRoom")
 		skynet.error("roommain ok ", ok)
 		
 		if room_name ~= "0" then
-			local room_name_service = cluster.proxy("roommain", room_name)
-			local address = skynet.call(room_name_service, "lua", "getRoomAddress")
-			local port = tonumber(skynet.call(room_name_service, "lua", "getRoomPort"))
+			local room_service = cluster.proxy("cluster_room", room_name)
+			local address = skynet.call(room_service, "lua", "getRoomAddress")
+			local port = tonumber(skynet.call(room_service, "lua", "getRoomPort"))
 			--local number = room_info.number
 			local conf = { room_name = room_name, address = address, port = port }
 			--local conf = room_name .. ";" .. address .. ";" .. port

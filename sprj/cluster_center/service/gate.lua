@@ -35,7 +35,7 @@ local function close_fd(fd)
 end
 
 function handler.open(source, conf)
-	skynet.error("handler.open")
+	skynet.error("Handler.open")
 end
 
 function handler.message(fd, msg, sz)
@@ -68,7 +68,7 @@ function handler.connect(fd, addr)
 	connection[fd] = c
 	skynet.error("New client from : " .. addr)
 	
-	agent[fd] = skynet.newservice("sagent")
+	agent[fd] = skynet.newservice("agent")
 	skynet.error("fd", fd, "agent", agent[fd])
 	skynet.error("\n")
 

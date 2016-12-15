@@ -46,5 +46,5 @@ skynet.start(function()
 		end
 	end)
 
-	skynet.register(SERVICE_NAME)
+	skynet.register(".log")
 end)
