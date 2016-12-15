@@ -199,5 +199,5 @@ skynet.start(function()
 		skynet.retpack(f(...))
 	end)
 
-	skynet.register("redispool")
+	skynet.register(SERVICE_NAME)
 end)

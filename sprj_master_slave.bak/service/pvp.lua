@@ -4,7 +4,6 @@ local coroutine = require "skynet.coroutine"
 local socket = require "socket"
 local sproto = require "sproto"
 local sprotoloader = require "sprotoloader"
-local cluster = require "cluster"
 
 local CMD = {}
 local queue = {}
@@ -58,17 +57,13 @@ function remove()
 			exist_queue[fd] = nil
 			table.insert(team, fd)
 		end
-		local roommain_service = cluster.proxy("roommain", "roommain")
-		local proxy_address = cluster.query("roommain", "roommain")
-		skynet.error(string.format("node[%s] server[%s] address[%s]", 
-			"roommain", "roommain", proxy_address))
-		local room_name = skynet.call(roommain_service, "lua", "getRoom")
+		local room_name = skynet.call("roommain", "lua", "getRoom")
 		skynet.error("roommain ok ", ok)
 		
 		if room_name ~= "0" then
-			local room_name_service = cluster.proxy("roommain", room_name)
-			local address = skynet.call(room_name_service, "lua", "getRoomAddress")
-			local port = tonumber(skynet.call(room_name_service, "lua", "getRoomPort"))
+			
+			local address = skynet.call(room_name, "lua", "getRoomAddress")
+			local port = tonumber(skynet.call(room_name, "lua", "getRoomPort"))
 			--local number = room_info.number
 			local conf = { room_name = room_name, address = address, port = port }
 			--local conf = room_name .. ";" .. address .. ";" .. port

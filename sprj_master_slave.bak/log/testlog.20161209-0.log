@@ -1,0 +1,311 @@
+[INFO] 2016-12-09 09:39:38 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 09:39:38 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 09:39:38 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 09:45:02 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 09:45:02 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 09:45:02 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 09:46:48 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 09:46:48 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 09:46:48 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 09:46:50 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 09:48:42 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 09:48:42 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 09:48:42 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 09:49:15 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 09:49:15 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 09:49:15 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 09:49:57 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 09:49:57 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 09:49:57 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 09:49:59 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 09:49:59 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 09:49:59 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 09:57:34 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 09:57:34 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 09:57:34 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 09:57:36 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 09:57:37 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 09:57:37 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 10:04:38 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 10:04:38 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 10:04:38 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 10:04:40 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 10:04:40 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 10:04:40 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 10:15:26 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 10:15:26 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 10:15:26 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 10:15:51 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 10:15:51 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 10:15:51 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 10:27:30 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 10:27:30 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 10:27:30 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 10:27:33 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 10:27:33 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 10:27:33 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 10:31:30 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 10:31:30 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 10:31:30 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 10:31:38 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 10:31:38 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 10:31:38 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 10:33:40 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 10:33:40 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 10:33:40 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 10:33:43 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 10:33:43 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 10:33:43 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 10:39:20 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 10:39:20 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 10:39:20 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 10:39:22 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 10:39:22 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 10:39:22 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 10:39:59 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 10:39:59 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 10:39:59 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 10:40:02 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 10:40:02 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 10:40:02 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 10:40:29 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 10:40:29 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 10:40:29 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 10:40:32 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9000
+[INFO] 2016-12-09 10:40:32 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9001
+[INFO] 2016-12-09 10:40:32 [room] [./sprj/service/room.lua:23] Room listen on 127.0.0.1:9002
+[INFO] 2016-12-09 14:07:21 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:07:21 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:07:21 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:11:30 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:11:30 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:11:30 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:14:00 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:14:00 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:14:00 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:17:25 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:17:25 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:17:25 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:19:35 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:19:35 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:19:35 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:23:59 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:23:59 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:23:59 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:26:06 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:26:06 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:26:06 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:27:03 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:27:03 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:27:03 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:28:51 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:28:51 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:28:51 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:30:00 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:30:00 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:30:00 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:32:08 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:32:08 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:32:08 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:35:55 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:35:55 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:35:55 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:40:01 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:40:01 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:40:02 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:40:56 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:40:56 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:40:56 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:41:56 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:41:56 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:41:56 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:41:58 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 14:42:34 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:42:34 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:42:34 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:42:36 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 14:42:36 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 14:42:36 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 14:45:25 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:45:25 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:45:25 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:45:27 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 14:45:27 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 14:45:27 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 14:47:45 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:47:45 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:47:45 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:48:36 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:48:36 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:48:36 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:48:39 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 14:48:39 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 14:48:39 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 14:51:35 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:51:35 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:51:35 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:51:37 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 14:51:37 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 14:51:37 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 14:56:13 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:56:13 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:56:13 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:56:15 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 14:56:15 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 14:56:15 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 14:57:33 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:57:33 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:57:33 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:57:35 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 14:57:35 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 14:57:35 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 14:58:37 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 14:58:37 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 14:58:37 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 14:58:39 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 14:58:39 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 14:58:39 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:01:46 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:01:46 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:01:46 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:01:49 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:01:49 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:01:49 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:04:59 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:04:59 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:04:59 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:05:03 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:05:03 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:05:03 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:06:29 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:06:29 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:06:29 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:06:32 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:06:32 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:06:32 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:16:55 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:16:55 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:16:55 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:16:57 [room] [./sprj/service/room.lua:25] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:16:57 [room] [./sprj/service/room.lua:25] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:16:57 [room] [./sprj/service/room.lua:25] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:34:08 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:34:08 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:34:08 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:35:48 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:35:48 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:35:48 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:37:19 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:37:19 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:37:19 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:37:21 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:37:22 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:37:22 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:38:18 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:38:18 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:38:18 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:38:20 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:38:20 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:38:20 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:49:01 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:49:01 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:49:01 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:49:03 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:49:03 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:49:03 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:51:54 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:51:54 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:51:54 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:51:56 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:51:56 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:51:56 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:57:00 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:57:00 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:57:00 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:57:07 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:57:07 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:57:07 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 15:57:58 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 15:57:58 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 15:57:58 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 15:58:00 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 15:58:00 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 15:58:00 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 16:02:36 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:02:36 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:02:36 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:02:41 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 16:02:41 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 16:02:41 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 16:07:56 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:07:56 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:07:56 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:08:00 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 16:08:00 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 16:08:00 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 16:09:43 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:09:43 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:09:43 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:09:46 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 16:09:46 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 16:09:46 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 16:13:46 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:13:46 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:13:46 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:13:48 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 16:13:48 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 16:13:48 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 16:15:06 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:15:06 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:15:06 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:15:08 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 16:15:08 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 16:15:08 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 16:21:56 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:21:56 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:21:56 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:21:58 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 16:21:58 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 16:21:58 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 16:28:57 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:28:57 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:28:57 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:28:59 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 16:28:59 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 16:28:59 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 16:31:39 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:31:39 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:31:39 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:31:41 [room] [./sprj/service/room.lua:27] Room[1] listen on 127.0.0.1:9000
+[INFO] 2016-12-09 16:31:41 [room] [./sprj/service/room.lua:27] Room[2] listen on 127.0.0.1:9001
+[INFO] 2016-12-09 16:31:41 [room] [./sprj/service/room.lua:27] Room[3] listen on 127.0.0.1:9002
+[INFO] 2016-12-09 16:37:21 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:37:21 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:37:21 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:39:28 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:39:28 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:39:28 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:41:40 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:41:40 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:41:40 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:43:18 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:43:18 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:43:18 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:44:55 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:44:55 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:44:55 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 16:50:35 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 16:50:35 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 16:50:35 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 17:33:58 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 17:33:58 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 17:33:58 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 17:35:25 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 17:35:25 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 17:35:25 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 18:03:11 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 18:03:11 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 18:03:11 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-09 18:06:20 [sgatemain] [./sprj/main/sgatemain.lua:11] Login server start
+[INFO] 2016-12-09 18:06:20 [redispool] [./sprj/database/sdb/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-09 18:06:20 [mysqlpool] [./sprj/database/sdb/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]

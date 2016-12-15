@@ -1,7 +1,6 @@
 local skynet = require "skynet"
 require "skynet.manager"
 local sprotoloader = require "sprotoloader"
-local cluster = require "cluster"
 
 
 local pool = {}
@@ -89,12 +88,8 @@ skynet.start(function ()
 			skynet.error("start [room %d] success", i)
 		end
 	end
-	cluster.open("roommain")
-	cluster.register("roommain")
+	
 	skynet.register("roommain")
-	local server_address = skynet.self()
-	local server_address_name = skynet.address(server_address)
-	skynet.error(string.format("address[%d] name[%s]", server_address, server_address_name))
 
 end)
 

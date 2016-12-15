@@ -1,14 +1,9 @@
 local skynet = require "skynet"
 local sprotoloader = require "sprotoloader"
-local cluster = require "cluster"
-require "skynet.manager"
 
 local max_client = 60
 
 skynet.start(function ()
-	cluster.open("sgatemain")
-	cluster.register("sgatemain")
-	skynet.register("sgatemain")
 	local log = skynet.uniqueservice("log")
 	skynet.call(log, "lua", "start")
 
@@ -66,7 +61,7 @@ skynet.start(function ()
  	-- 	skynet.error("key:", k)
  	-- 	skynet.error("row.id:", row.id, "row.uid", row.uid)
  	-- end
-	--skynet.exit()
+	skynet.exit()
 
 end
 )

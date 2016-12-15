@@ -75,5 +75,5 @@ skynet.start(function()
 		skynet.retpack(f(...))
 	end)
 
-	skynet.register("mysqlpool")
+	skynet.register(SERVICE_NAME)
 end)

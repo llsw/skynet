@@ -4,7 +4,6 @@ local netpack = require "netpack"
 local gateserver = require "snax.gateserver"
 local sproto = require "sproto"
 local sprotoloader = require "sprotoloader"
-require "skynet.manager"
 
 local connection = {}
 local CMD = {}
