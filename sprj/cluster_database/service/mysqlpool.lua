@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 require "skynet.manager"
 local mysql = require "mysql"
+local crypt = require "crypt"
 
 local CMD = {}
 local pool = {}
@@ -10,10 +11,15 @@ function CMD.start()
 	maxconn = tonumber(skynet.getenv("mysql_maxconn")) or 8
 	
 	for i=1, maxconn do
+		local rwho = skynet.getenv("who")
 		local rhost = skynet.getenv("mysql_host")
 		local rport = skynet.getenv("mysql_port")
 		local ruser = skynet.getenv("mysql_user")
 		local rpassword = skynet.getenv("mysql_password")
+		
+		rpassword = crypt.base64decode(rpassword)
+		rpassword = crypt.aesdecode(rpassword,rwho,"")
+
 		local rdatabase = skynet.getenv("mysql_database")
 		local rmax_packet_size = 1024 * 1024
 

@@ -5,6 +5,7 @@ require "skynet.manager"
 
 local max_client = 60
 
+
 skynet.start(function ()
 	cluster.open("cluster_center")
 	--cluster.register("cluster_center")
@@ -12,14 +13,17 @@ skynet.start(function ()
 	local log = skynet.uniqueservice("log")
 	skynet.call(log, "lua", "start")
 
-	skynet.error("Login server start")
-	LOG_INFO("Login server start")
+	skynet.error("Cluster_center start")
+	LOG_INFO("Cluster_centerstart")
 	
 	skynet.uniqueservice("protoloader")
 	if not skynet.getenv "daemon" then
 		local console = skynet.newservice("console")
 	end
-	skynet.newservice("debug_console",8000)
+	skynet.uniqueservice("database")
+
+	local debug_port = skynet.getenv "debug_port"
+	skynet.newservice("debug_console",debug_port)
 
 	local gate = skynet.newservice("gateway")
 	skynet.call(gate, "lua", "open", {
@@ -27,13 +31,8 @@ skynet.start(function ()
 			maxclient = max_client,
 			nodelay = true,
 		})
-	skynet.error("Gate listen on", 8889)
+	skynet.error("Gateway listen on", 8889)
 
- 	local redispool = skynet.uniqueservice("redispool")
-  	skynet.call(redispool, "lua", "start")
-
-  	local mysqlpool = skynet.uniqueservice("mysqlpool")
-  	skynet.call(mysqlpool, "lua", "start")
 
   	local pvp  = skynet.uniqueservice("pvp")
   	skynet.call(pvp, "lua", "start")
@@ -59,13 +58,13 @@ skynet.start(function ()
  	skynet.error([[* ━━━━━━神兽出没━━━━━━]])
 
 	
- 	-- local res = mysql_query("select * from account")
- 	-- skynet.error("type of res:", type(res))
- 	-- for k, row in pairs(res) do
- 	-- 	skynet.error("key:", k)
- 	-- 	skynet.error("row.id:", row.id, "row.uid", row.uid)
- 	-- end
-	--skynet.exit()
+ 	local res = mysql_query("select * from account")
+ 	skynet.error("type of res:", type(res))
+ 	for k, row in pairs(res) do
+ 		skynet.error("key:", k)
+ 		skynet.error("row.id:", row.id, "row.uid", row.uid)
+ 	end
+	skynet.exit()
 
 end
 )

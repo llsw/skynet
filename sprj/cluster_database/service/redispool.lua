@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 require "skynet.manager"
 local redis = require "redis"
+local crypt = require "crypt"
 
 local CMD = {}
 local pool = {}
@@ -10,10 +11,14 @@ function CMD.start()
 	
 	maxconn = tonumber(skynet.getenv("redis_maxinst")) or 1
 	for i=1, maxconn do
+		local rwho = skynet.getenv("who")
 		local rhost = skynet.getenv("redis_host" .. i)
 		local rport = skynet.getenv("redis_port" .. i)
 		local rdb = skynet.getenv("redis_db" .. i)
 		local rauth = skynet.getenv("redis_auth" .. i)
+		rauth = crypt.base64decode(rauth)
+		rauth = crypt.aesdecode(rauth,rwho,"")
+
 		local db = redis.connect({
 				host = rhost,
 				port = rport,

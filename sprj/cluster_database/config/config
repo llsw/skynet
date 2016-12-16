@@ -1,0 +1,41 @@
+root = "./"
+thread = 8
+logger = nil -- 不启用日志
+logpath = "."
+harbor = 0 -- 单节点不需要
+-- address = "127.0.0.1:2526" -- 单节点不需要
+-- master = "127.0.0.1:2013"  -- 单节点不需要
+bootstrap = "snlua bootstrap" -- skynet节点起动脚本
+--standalone= "0.0.0.0:2013" -- 单节点不不需要开启控制中心
+luaservice = root.."service/?.lua;"..root.."sprj/cluster_database/?.lua;"..root.."sprj/protocol/?.lua;"..root.."sprj/cluster_database/?.lua;"..root.."sprj/cluster_database/service/?.lua;"..root.."sprj/util/?.lua;" --luaservice脚本路径
+lualoader = root .. "lualib/loader.lua" --lua脚本加载路径
+
+preload = root.."sprj/cluster_database/preload/preload.lua"
+snax = root.."sprj/protocol/?.lua;"..root.."sprj/cluster_database/?.lua;"..root.."sprj/cluster_database/service/?.lua;" -- snax 是一个方便 skynet 服务实现的简单框架,设置它查找lua脚本的路径
+lua_path = root.."lualib/?.lua;"..root.."lualib/?/init.lua;"..root.."sprj/util/?.lua;"
+cpath = root.."cservice/?.so" -- c动态链接库路径
+
+cluster = root .. "sprj/clustername/clustername.lua"
+
+debug_port = 8002
+
+log_dirname = "sprj/log"
+log_basename = "cluster_database_log"
+
+who = "interface"
+
+redis_maxinst = 1			-- redis最大实例数
+redis_host1 = "127.0.0.1"	-- redis数据库IP
+redis_port1 = 6479			-- redis数据库端口
+redis_db1 = 0				-- redis数据库db
+redis_auth1 = "jM+x3GFfjj2fQm4x9mWUtGZejd+2S1jfgm8FIo58apU="		-- redis数据库密码
+
+
+mysql_maxconn = 1 			-- mysql最大连接数
+mysql_host = "127.0.0.1"	-- mysql数据库IP
+mysql_port = 3306			-- mysql数据库端口
+mysql_database = "sprj"	-- mysql数据库
+mysql_user = "interface"	-- mysql数据库用户名
+mysql_password = "H3/I/BdJecGOn5uP3ygKk/n4cSZM2OzPvwD3phcyELs=" -- mysql数据库密码
+
+start = "database_main" --自定义节点起动的服务

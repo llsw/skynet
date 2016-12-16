@@ -1,0 +1,6 @@
+[INFO] 2016-12-15 18:36:00 [redispool] [./sprj/cluster_database/service/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-15 18:36:00 [mysqlpool] [./sprj/cluster_database/service/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-15 19:12:23 [redispool] [./sprj/cluster_database/service/redispool.lua:26] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-15 19:12:23 [mysqlpool] [./sprj/cluster_database/service/mysqlpool.lua:32] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]
+[INFO] 2016-12-15 19:34:46 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-15 19:34:46 [mysqlpool] [./sprj/cluster_database/service/mysqlpool.lua:38] mysql connect success [host = 127.0.0.1 port = 3306 database = sprj]

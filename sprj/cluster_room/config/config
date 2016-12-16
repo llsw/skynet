@@ -7,19 +7,25 @@ harbor = 0 -- 单节点不需要
 -- master = "127.0.0.1:2013"  -- 单节点不需要
 bootstrap = "snlua bootstrap" -- skynet节点起动脚本
 --standalone= "0.0.0.0:2013" -- 从节点不不需要开启控制中心
-luaservice = root.."service/?.lua;"..root.."sprj/cluster_room/?.lua;"..root.."sprj/database/sdb/?.lua;"..root.."sprj/protocol/?.lua;"..root.."sprj/cluster_room/?.lua;"..root.."sprj/cluster_room/service/?.lua;"..root.."sprj/util/?.lua;" --luaservice脚本路径
+
+luaservice = root.."service/?.lua;"..root.."sprj/cluster_room/?.lua;"..root.."sprj/protocol/?.lua;"..root.."sprj/cluster_room/?.lua;"..root.."sprj/cluster_room/service/?.lua;"..root.."sprj/util/?.lua;" --luaservice脚本路径
+
 lualoader = root .. "lualib/loader.lua" --lua脚本加载路径
 
 preload = root.."sprj/cluster_room/preload/preload.lua"
 
-snax = root.."sprj/database/sdb/?.lua;"..root.."sprj/protocol/?.lua;"..root.."sprj/cluster_room/?.lua;"..root.."sprj/cluster_room/service/?.lua;" -- snax 是一个方便 skynet 服务实现的简单框架,设置它查找lua脚本的路径
+snax = root.."sprj/protocol/?.lua;"..root.."sprj/cluster_room/?.lua;"..root.."sprj/cluster_room/service/?.lua;" -- snax 是一个方便 skynet 服务实现的简单框架,设置它查找lua脚本的路径
+
 lua_path = root.."lualib/?.lua;"..root.."lualib/?/init.lua;"..root.."sprj/util/?.lua;"
+
 cpath = root.."cservice/?.so" -- c动态链接库路径
 
 cluster = root .. "sprj/clustername/clustername.lua"
 
 log_dirname = "sprj/log"
 log_basename = "cluster_room_log"
+
+debug_port = 8001
 
 roomaddress = "127.0.0.1"
 roomport = "9000"

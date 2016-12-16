@@ -46,11 +46,12 @@ function LOG_FATAL(fmt, ...)
 end
 
 function redis_query(args, dbn)
-	local cmd = assert(args[1])
-	args[1] = dbn
-	return skynet.call("redispool", "lua", cmd, table.unpack(args))
+
+	return skynet.call(".database", "lua", "redis_query", args, dbn)
 end
 
 function mysql_query(sql, dbn)
-	return skynet.call("mysqlpool", "lua", "execute", sql, dbn)
+	
+	return skynet.call(".database", "lua", "mysql_query", sql, dbn)
 end
+

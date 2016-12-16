@@ -7,6 +7,7 @@ skynet.start(function()
 	local sharestring = tonumber(skynet.getenv "sharestring" or 4096)
 	memory.ssexpand(sharestring)
 
+
 	local standalone = skynet.getenv "standalone"
 
 	local launcher = assert(skynet.launch("snlua","launcher"))

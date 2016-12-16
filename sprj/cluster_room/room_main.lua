@@ -57,7 +57,9 @@ skynet.start(function ()
 	if not skynet.getenv "daemon" then
 		local console = skynet.newservice("console")
 	end
-	skynet.newservice("debug_console",8001)
+
+	local debug_port = skynet.getenv "debug_port"
+	skynet.newservice("debug_console", debug_port)
 
 	local maxnumber = skynet.getenv  "roommaxnumber"
 	local address = skynet.getenv "roomaddress"
