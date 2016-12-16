@@ -11,9 +11,10 @@ git clone https://github.com/interfacekun/skynet.git
 ```
 ## 编译
 ```Bash
-#对于FreeBSD , 使用 gmake 代替 make
+
 cd skynet
 make 'PLATFORM'  # PLATFORM 可以是 linux, macosx, freebsd now
+				 #对于FreeBSD , 使用 gmake 代替 make
 ```
 ##或者
 ```Bash
