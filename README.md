@@ -3,7 +3,7 @@
 
 ## Skynet
 
-*Skynet is a lightweight online game framework, and it can be used in many other fields.https://github.com/cloudwu/skynet.git
+* Skynet is a lightweight online game framework, and it can be used in many other fields.https://github.com/cloudwu/skynet.git
 
 ## 下载
 ```Bash
