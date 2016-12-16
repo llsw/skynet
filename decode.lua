@@ -1,5 +1,6 @@
 package.cpath = "luaclib/?.so"
-package.path = "lualib/?.lua;sprj/protocol/?.lua"
+package.path = "lualib/?.lua"
+local crypt = require "crypt"
 
 password = crypt.aesencode("123456", "interface", "")
 print(password)
