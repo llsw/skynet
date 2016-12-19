@@ -16,7 +16,7 @@ preload = root.."sprj/cluster_center/preload/preload.lua"
 
 snax = root.."sprj/protocol/?.lua;"..root.."sprj/cluster_center/?.lua;"..root.."sprj/cluster_center/service/?.lua;" -- snax 是一个方便 skynet 服务实现的简单框架,设置它查找lua脚本的路径
 
-lua_path = root.."lualib/?.lua;"..root.."lualib/?/init.lua;"..root.."sprj/util/?.lua;"
+lua_path = root.."lualib/?.lua;"..root.."lualib/?/init.lua;"..root.."sprj/util/?.lua;"..root.."sprj/lualib/?.lua;"..root.."sprj/lualib/?/?.lua;"
 
 cpath = root.."cservice/?.so" -- c动态链接库路径
 

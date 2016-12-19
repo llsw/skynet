@@ -30,8 +30,5 @@ skynet.start(function ()
 
   	local mysqlpool = skynet.uniqueservice("mysqlpool")
   	skynet.call(mysqlpool, "lua", "start")
-
-  	
-
 	
 end)

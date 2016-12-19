@@ -3,14 +3,12 @@ require "skynet.manager"
 local sprotoloader = require "sprotoloader"
 local cluster = require "cluster"
 
-
 local pool = {}
 local CMD = {}
-local queue = {}
+local queue = {} 
 
 
 function getRoom()
-
 	if #queue > 0 then
 		skynet.error("CMD.getRoom")	
 
@@ -28,14 +26,11 @@ function getRoom()
 end
 
 function exitRoom(roomnumber)
-
 	table.insert(queue, roomnumber)
 	
 end
 
 function CMD.getRoom()
-
-
 	return getRoom()
 end
 

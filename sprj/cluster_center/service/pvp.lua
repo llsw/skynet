@@ -5,11 +5,12 @@ local socket = require "socket"
 local sproto = require "sproto"
 local sprotoloader = require "sprotoloader"
 local cluster = require "cluster"
-
+local queue = require "skynet.queue"
+local lock = queue()
+local lock_stat = false
 local CMD = {}
 local queue = {}
 local exist_queue = {}
-
 local co 
 local roomnum = 0;
 local mannumber = 0;
@@ -24,27 +25,40 @@ local function send_package(fd, pack)
 	socket.write(fd, package)
 end
 
+local function add(fd)
+	if lock_stat == false then
+		lock_stat = true
+		if exist_queue[fd] ==  nil then
+	 		table.insert(queue, fd)
+	 		exist_queue[fd] = fd
+	 		--print(coroutine.status(co))
+	 		print("queuen", #queue)
+	 		if #queue >= 3 then
+	 			--coroutine.resume(co)
+	 			skynet.wakeup(co)
+	 		end
+	 		--print(coroutine.status(co))
+	 		-- if #queue > 10 then
+	 		-- 	skynet.send(service,"debug","GC") 
+	 		-- end
+	 		lock_stat = false
+	 		return 0
+	 	else 
+	 		lock_stat = false
+	 		return 1
+	 	end
+	 else
+	 	lock_stat = false
+	 	return 1
+	 end
+
+end
 
 function CMD.add(fd)
  	
- 	if exist_queue[fd] ==  nil then
- 		table.insert(queue, fd)
- 		exist_queue[fd] = fd
- 		--print(coroutine.status(co))
- 		print("queuen", #queue)
- 		if #queue >= 3 then
- 			--coroutine.resume(co)
- 			skynet.wakeup(co)
- 		end
- 		--print(coroutine.status(co))
- 		-- if #queue > 10 then
- 		-- 	skynet.send(service,"debug","GC") 
- 		-- end
-
- 		return 0
- 	else 
- 		return 1
- 	end
+ 	local result = lock(add, fd)
+ 	skynet.error("Add room result", result)
+ 	return result
 end
 
 function remove()

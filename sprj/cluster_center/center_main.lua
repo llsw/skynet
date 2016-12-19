@@ -37,7 +37,7 @@ skynet.start(function ()
   	local pvp  = skynet.uniqueservice("pvp")
   	skynet.call(pvp, "lua", "start")
 
-  -- 	skynet.error([[*━━━━━━神兽出没━━━━━━]])
+ 	-- skynet.error([[*━━━━━━神兽出没━━━━━━]])
  	-- skynet.error([[* 　　 ┏┓　 ┏┓]])
  	-- skynet.error([[* 　　┏┛┻━━━┛┻┓]])
  	-- skynet.error([[* 　　┃　　　 ┃]])
