@@ -1,5 +1,10 @@
 
+--[[
+ * @brief: client.lua
 
+ * @author:	  kun si
+ * @date:	2016-12-19
+--]]
 
 package.cpath = "luaclib/?.so"
 package.path = "lualib/?.lua;sprj/protocol/?.lua"
