@@ -37,7 +37,9 @@ sudo apt-get install mysql-server
 ```
 * 创建好数据库
 * 执行sprj/cluster_database/config/目录下的sql文件，导入表和数据到数据库中
+
 ## 说明
+* 所有文件都在sprj目录中
 * 数据库连接配置在sprj/cluster_database/config/config文件里
 * 密码加密
 ```Bash
