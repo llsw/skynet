@@ -38,4 +38,4 @@ mysql_database = "sprj"	-- mysql数据库
 mysql_user = "interface"	-- mysql数据库用户名
 mysql_password = "H3/I/BdJecGOn5uP3ygKk/n4cSZM2OzPvwD3phcyELs=" -- mysql数据库密码
 
-start = "database_main" --自定义节点起动的服务
+start = "database_main" --自定义节点起动的服务 

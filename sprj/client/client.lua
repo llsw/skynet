@@ -1,3 +1,11 @@
+
+--[[
+ * @brief: client.lua
+
+ * @author:	  kun si
+ * @date:	2016-12-19
+--]]
+
 package.cpath = "luaclib/?.so"
 package.path = "lualib/?.lua;sprj/protocol/?.lua"
 
@@ -16,7 +24,6 @@ local request = host:attach(sproto.new(proto.c2s))
 
 local fd = assert(socket.connect("127.0.0.1", 8889))
 local connect_room_fd 
-
 
 local function send_package(fd, pack)
 	local package = string.pack(">s2", pack)
