@@ -1,4 +1,3 @@
-
 ![coder farmer](https://raw.githubusercontent.com/interfacekun/skynet/master/img/manong.jpg "0. 0")
 
 ## Skynet

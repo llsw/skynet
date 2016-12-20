@@ -1,0 +1,196 @@
+[INFO] 2016-12-20 19:00:41 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:18:54 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:20:49 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:22:07 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:22:34 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:25:07 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:25:07 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 19:27:10 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:27:10 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 19:30:03 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:30:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 19:39:02 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:39:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 19:43:26 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:43:26 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 19:48:20 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:48:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 19:48:22 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] GetDB success
+[INFO] 2016-12-20 19:48:23 [mysqlpool] [./sprj/cluster_database/service/mysqlpool.lua:13] execute sql[select * from account]
+[INFO] 2016-12-20 19:51:59 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:51:59 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 19:53:18 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:53:18 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 19:56:06 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:56:06 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 19:57:55 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 19:57:55 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 20:00:06 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:00:24 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:00:24 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 20:01:36 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:01:36 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 20:02:29 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:02:29 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 20:02:56 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:02:56 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 20:03:44 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:04:02 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[1]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[2]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[3]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[4]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[5]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[6]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[7]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[8]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[9]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[10]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[11]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[12]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[13]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[14]
+[INFO] 2016-12-20 20:04:02 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[0]
+[INFO] 2016-12-20 20:05:20 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[1]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[2]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[3]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[4]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[5]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[6]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[7]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[8]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[9]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[10]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[11]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[12]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[13]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[14]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[0]
+[INFO] 2016-12-20 20:05:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] number
+[INFO] 2016-12-20 20:06:03 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[1]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[2]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[3]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[4]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[5]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[6]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[7]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[8]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[9]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[10]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[11]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[12]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[13]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[14]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[0]
+[INFO] 2016-12-20 20:06:03 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] number
+[INFO] 2016-12-20 20:07:30 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[1]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[2]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[3]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[4]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[5]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[6]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[7]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[8]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[9]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[10]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[11]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[12]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[13]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[14]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[0]
+[INFO] 2016-12-20 20:07:30 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] number
+[INFO] 2016-12-20 20:11:00 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:11:00 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 0
+[INFO] 2016-12-20 20:12:13 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:12:13 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 0
+[INFO] 2016-12-20 20:12:13 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] number
+[INFO] 2016-12-20 20:12:34 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:12:34 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 0
+[INFO] 2016-12-20 20:13:20 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[1]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[2]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[3]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[4]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[5]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[6]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[7]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[8]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[9]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[10]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[11]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[12]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[13]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[14]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] table
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] Activity DB[0]
+[INFO] 2016-12-20 20:13:20 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] number
+[INFO] 2016-12-20 20:13:29 [redispool] [./sprj/cluster_database/service/redispool.lua:31] redis connect success  [host = 127.0.0.1 port = 6479 db = 0]
+[INFO] 2016-12-20 20:13:29 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] DBPool useful is 15
+[INFO] 2016-12-20 20:13:33 [mysqlpool] [./sprj/lualib/sprj/db_connection.lua:17] GetDB success
+[INFO] 2016-12-20 20:13:33 [mysqlpool] [./sprj/cluster_database/service/mysqlpool.lua:13] execute sql[select * from account]

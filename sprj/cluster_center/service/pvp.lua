@@ -19,7 +19,6 @@ local room = {}
 local host
 local send_request
 
-
 local function send_package(fd, pack)
 	local package = string.pack(">s2", pack)
 	socket.write(fd, package)
