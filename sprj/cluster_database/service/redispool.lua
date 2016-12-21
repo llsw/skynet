@@ -20,11 +20,11 @@ function CMD.start()
 	dbc = dbPool.new()
 	dbc:init(dbconf)
 
-	local db = dbc:get()
-	if  db then
-		db:flushdb()
-		dbc:free(db)
-	end
+	-- local db = dbc:get()
+	-- if  db then
+	-- 	db:flushdb()
+	-- 	dbc:free(db)
+	-- end
 	
 end
 
