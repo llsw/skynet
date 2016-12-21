@@ -49,9 +49,9 @@ lua sprj/tools/encodepwd.lua
 ## 运行
 * 在`不同`的控制运行下面的命令
 ```Bash
-./skynet sprj/cluster_database/config 	#启动数据库节点
-./skynet sprj/cluster_center/config 	#启动中心节点
-./skynet sprj/cluster_room/config 		#启动房间节点
+./skynet sprj/cluster_database/config/config 	#启动数据库节点
+./skynet sprj/cluster_center/config/config 	#启动中心节点
+./skynet sprj/cluster_room/config/config 		#启动房间节点
 ./3rd/lua/lua sprj/client/client.lua 	#启动客户端1
 ./3rd/lua/lua sprj/client/client.lua 	#启动客户端2
 ./3rd/lua/lua sprj/client/client.lua 	#启动客户端3
