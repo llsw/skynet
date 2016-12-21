@@ -39,7 +39,7 @@ sudo apt-get install mysql-server
 
 ## 说明
 * 所有文件都在sprj目录中
-* 数据库连接配置在sprj/lualib/sprj/service_config文件里
+* 数据库连接配置在sprj/lualib/sprj/service_config.lua文件里
 * 密码加密
 ```Bash
 lua sprj/tools/encodepwd.lua
