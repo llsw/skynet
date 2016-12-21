@@ -23,7 +23,7 @@ make
 ## 配置环境
 * 安装redis
 ```Bash
-sudo apt-get install redis
+sudo apt-get install redis-server
 ```
 * 启动redis
 ```Bash
