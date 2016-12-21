@@ -23,7 +23,6 @@ function queue.push(q, value)
 		local last = q.last + 1
 		q.last = last
 		q[last] = value
-		print(last, value)
 		return 0
 	end
 end
@@ -35,7 +34,6 @@ function queue.pop(q)
 		local value = q[q.first]
 		q[q.first] = nil
 		q.first = q.first + 1
-		print(q.first, value)
 		return value
 	end
 end

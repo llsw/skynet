@@ -1,4 +1,24 @@
 local skynet = require "skynet"
+
+
+--[[
+	封装好的输出函数
+	输出到控制台和日志文件
+	一个是info
+	一个是error
+--]]
+
+function printI(str, ...)
+	skynet.error("[INFO]", string.format(str, ...))
+	LOG_INFO(str, ...)
+end
+
+function printE(str, ...)
+	skynet.error("[ERROR]", string.format(str, ...))
+	LOG_ERROR(str, ...)
+end
+
+
 function LOG_DEBUG(fmt, ...)
 	local msg = string.format(fmt, ...)
 	local info = debug.getinfo(2)
