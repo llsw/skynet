@@ -64,6 +64,9 @@ skynet.start(function ()
  		skynet.error("key:", k)
  		skynet.error("row.id:", row.id, "row.uid", row.uid)
  	end
+
+ 	local res_redis = redis_query({"get", "test"})
+ 	printI(res_redis)
 	skynet.exit()
 
 end
