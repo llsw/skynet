@@ -162,6 +162,7 @@ local function launch_master(conf)
 	end)
 
 	for i=1,instance do
+		skynet.error("Service name:", SERVICE_NAME)
 		table.insert(slave, skynet.newservice(SERVICE_NAME))
 	end
 
@@ -187,6 +188,7 @@ local function login(conf)
 	local name = "." .. (conf.name or "login")
 	skynet.start(function()
 		local loginmaster = skynet.localname(name)
+		skynet.error("LoginMaster:", loginmaster)
 		if loginmaster then
 			local auth_handler = assert(conf.auth_handler)
 			launch_master = nil

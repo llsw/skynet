@@ -68,6 +68,7 @@ function REQUEST:pvp()
 	end
 end
 
+
 local function request(name, args, response)
 	local f = assert(REQUEST[name])
 	local r = f(args)
@@ -76,6 +77,7 @@ local function request(name, args, response)
 		--skynet.error("dddddddddd",type(response(r)))
 		return response(r)
 	end
+
 end
 
 local function send_package(pack)

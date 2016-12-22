@@ -57,7 +57,6 @@ skynet.start(function ()
  	-- skynet.error([[* 　　 　┗┻┛ ┗┻┛]])
  	-- skynet.error([[* ━━━━━━神兽出没━━━━━━]])
 
-	
  	local res = mysql_query("select * from account")
  	skynet.error("type of res:", type(res))
  	for k, row in pairs(res) do

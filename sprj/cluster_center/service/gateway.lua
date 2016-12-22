@@ -17,7 +17,6 @@ skynet.register_protocol {
 
 }
 local handler = {}
-
 local function unforward(c)
 	if c.agent then
 		forwarding[c.agent] = nil
@@ -39,7 +38,6 @@ function handler.open(source, conf)
 end
 
 function handler.message(fd, msg, sz)
-	
 	local c =  connection[fd]
 	local agent = c.agent
 	local client = c.client
@@ -112,7 +110,6 @@ function CMD.forward(source, fd, client, address)
 	skynet.error("end a forward")
 	skynet.error("\n")
 end
-
 
 
 function CMD.kick(source, fd)

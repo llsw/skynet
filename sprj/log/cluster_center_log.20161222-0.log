@@ -1,0 +1,12 @@
+[INFO] 2016-12-22 10:15:40 [center_main] [./sprj/cluster_center/center_main.lua:17] Cluster_centerstart
+[INFO] 2016-12-22 10:17:07 [center_main] [./sprj/cluster_center/center_main.lua:17] Cluster_centerstart
+[INFO] 2016-12-22 10:17:07 [center_main] [./sprj/util/util.lua:13] Redis test key
+[INFO] 2016-12-22 10:18:05 [center_main] [./sprj/cluster_center/center_main.lua:17] Cluster_centerstart
+[INFO] 2016-12-22 10:18:05 [center_main] [./sprj/util/util.lua:13] Redis test key
+[INFO] 2016-12-22 10:19:13 [center_main] [./sprj/cluster_center/center_main.lua:17] Cluster_centerstart
+[INFO] 2016-12-22 10:19:13 [center_main] [./sprj/util/util.lua:13] Redis test key
+[INFO] 2016-12-22 10:21:09 [center_main] [./sprj/cluster_center/center_main.lua:17] Cluster_centerstart
+[INFO] 2016-12-22 10:21:09 [center_main] [./sprj/util/util.lua:13] Redis test key
+[INFO] 2016-12-22 11:53:03 [center_main] [./sprj/cluster_center/center_main.lua:17] Cluster_centerstart
+[INFO] 2016-12-22 11:54:53 [center_main] [./sprj/cluster_center/center_main.lua:17] Cluster_centerstart
+[INFO] 2016-12-22 11:55:07 [center_main] [./sprj/cluster_center/center_main.lua:17] Cluster_centerstart

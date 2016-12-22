@@ -27,4 +27,12 @@ service_config["redis_6479_config"] = {
 	db = 0,            	--
 	auth = "jM+x3GFfjj2fQm4x9mWUtGZejd+2S1jfgm8FIo58apU=",
 }
+
+
+service_config["gateway_config"] = {
+	port = 8889,
+	maxclient = max_client,
+	nodelay = true,
+}
+
 return service_config

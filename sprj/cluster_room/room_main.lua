@@ -55,6 +55,8 @@ skynet.start(function ()
 
 	local debug_port = skynet.getenv "debug_port"
 	skynet.newservice("debug_console", debug_port)
+	local log = skynet.uniqueservice("log")
+	skynet.call(log, "lua", "start")
 
 	local maxnumber = skynet.getenv  "roommaxnumber"
 	local address = skynet.getenv "roomaddress"
