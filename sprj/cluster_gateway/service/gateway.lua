@@ -33,11 +33,24 @@ local function getClusterName(code)
 end
 
 
-local function forword(cluster_name, fd, msg, sz)
-	printI("Forword cluster_name[%s] fd[%d]", cluster_name, fd)
-	local proxy = cluster.proxy(cluster_name, cluster_code[cluster_name].SERVICE)
-	local ret = skynet.call(proxy, "lua", "clientMsg", fd, msg, sz)
-	send_package(fd, ret)
+local function forword(code, fd, msg, sz)
+	local cluster_name = getClusterName(code)
+	if code == 2 then
+		
+		printI("Forword cluster_name[%s] fd[%d]", cluster_name, fd)
+		local proxy = cluster.proxy(cluster_name, cluster_code[cluster_name].SERVICE)
+		local ret = skynet.call(proxy, "lua", "clientMsg", fd, msg, sz)
+		send_package(fd, ret)
+	else
+		if not connection[fd].auth then
+			
+		else
+	 		printI("Forword cluster_name[%s] fd[%d]", cluster_name, fd)
+	 		local proxy = cluster.proxy(cluster_name, cluster_code[cluster_name].SERVICE)
+	 		local ret = skynet.call(proxy, "lua", "clientMsg", fd, msg, sz)
+	 		send_package(fd, ret)
+	 	end
+	end
 	
 end
 function handler.open(source, conf)
@@ -49,8 +62,7 @@ function handler.message(fd, msg, sz)
 		local code = tool.wordToInt(string.sub(msg, 1, 2))
 		local cut_msg = string.sub(msg, 3, sz)
 		local cut_sz = sz - 2
-		local clusterName = getClusterName(code)
-		forword(clusterName, fd, cut_msg, cut_sz)
+		forword(code, fd, cut_msg, cut_sz)
 		
 end
 
