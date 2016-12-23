@@ -15,4 +15,6 @@ code[3] = "cluster_database"
 code[4] = "cluster_room"
 code[5] = "cluster_center"
 
+code["cluster_login"] = {SERVICE = ".login"}
+
 return code

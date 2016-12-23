@@ -168,7 +168,7 @@ end
 
 -- send_request("transfer_table",{tt=tt, tti={5,6,7,8}})
 
-send_request("pvp")
+send_request("auth")
 -- -- print(string.format("client msg fd[%d]", fd))
 
 while true do

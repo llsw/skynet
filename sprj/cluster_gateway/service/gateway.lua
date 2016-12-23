@@ -8,6 +8,8 @@
 
 local skynet = require "skynet"
 local netpack = require "netpack"
+local cluster = require "cluster"
+local socketdriver = require "socketdriver"
 local gateserver = require "snax.gateserver"
 local cluster_code = require "sprj.cluster_code"
 local sprotoloader = require "sprotoloader"
@@ -18,13 +20,25 @@ local connection = {}
 
 local host = sprotoloader.load(1):host "package"
 local send_request = host:attach(sprotoloader.load(2))
+local session = 0
+
+local function send_package(fd, pack)
+	local package = string.pack(">s2", pack)
+	socketdriver.send(fd, package)
+end
 
 local function getClusterName(code)
 	assert(cluster_code[code])
 	return cluster_code[code]
 end
+
+
 local function forword(cluster_name, fd, msg, sz)
 	printI("Forword cluster_name[%s] fd[%d]", cluster_name, fd)
+	local proxy = cluster.proxy(cluster_name, cluster_code[cluster_name].SERVICE)
+	local ret = skynet.call(proxy, "lua", "clientMsg", fd, msg, sz)
+	send_package(fd, ret)
+	
 end
 function handler.open(source, conf)
 	printI("Gateway open source[%d]", source)
@@ -32,12 +46,8 @@ end
 
 function handler.message(fd, msg, sz)
 		msg = netpack.tostring(msg, sz)
-		printI("Msg sz[%d]", sz)
 		local code = tool.wordToInt(string.sub(msg, 1, 2))
-		local code2 = tool.wordToInt(string.sub(msg, 3, 4))
-		printI("code[%d]", code)	
 		local cut_msg = string.sub(msg, 3, sz)
-		printI("Msg sz[%d]", #cut_msg)
 		local cut_sz = sz - 2
 		local clusterName = getClusterName(code)
 		forword(clusterName, fd, cut_msg, cut_sz)
@@ -46,8 +56,10 @@ end
 
 function handler.connect(fd, addr)
 	gateserver.openclient(fd)
+	session = session + 1
 	connection[fd] = {
 		auth = false,
+		session = session,
 		loginServerName = nil,
 		uid = nil,
 	}
@@ -75,7 +87,7 @@ function CMD.logined(fd, loginServerName, uid)
 	connection[fd]={
 		auth = true,
 		loginServerName = loginServerName,
-		uid = uid
+		uid = uid,
 	}
 end
 	

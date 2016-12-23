@@ -90,6 +90,12 @@ cancel_ready 10 {
 	}	
 }
 
+auth 11{
+	response {
+		info 0 : string
+	}
+}
+
 ]]
 
 proto.s2c = sprotoparser.parse [[
