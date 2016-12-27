@@ -39,7 +39,7 @@ local function forword(code, fd, msg, sz)
 		
 		printI("Forword cluster_name[%s] fd[%d]", cluster_name, fd)
 		local proxy = cluster.proxy(cluster_name, cluster_code[cluster_name].SERVICE)
-		local ret = skynet.call(proxy, "lua", "clientMsg", fd, msg, sz)
+		local ret = skynet.call(proxy, "lua", "clientMsg", conefd, msg, sz)
 		send_package(fd, ret)
 	else
 		if not connection[fd].auth then

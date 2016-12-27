@@ -16,6 +16,8 @@ local socket = require "clientsocket"
 local proto = require "proto"
 local sproto = require "sproto"
 local tool = require "func_tool"
+local constant = require "constant"
+local crypt  = require "crypt"
 
 local REQUEST = {}
 
@@ -24,10 +26,13 @@ local request = host:attach(sproto.new(proto.c2s))
 
 local fd = assert(socket.connect("127.0.0.1", 8889))
 local connect_room_fd 
+local auth = {}
+local coroutine = require "skynet.coroutine"
+local auth_co
+local username
+local password
 
-local function send_package(fd, pack)
-	local code = 2
-	print("code:", tool.intToWord(code))
+local function send_package(code, fd, pack)
 	pack = tool.intToWord(code) .. pack
 	local package = string.pack(">s2", pack)
 	socket.send(fd, package)
@@ -64,11 +69,11 @@ end
 
 local session = 0
 
-local function send_request(name, args)
+local function send_request(code, name, args)
 	session = session + 1
 	local str = request(name, args, session)
-	send_package(fd, str)
-	--print("Request:", session)
+	send_package(code, fd, str)
+	print("Request:", session)
 end
 
 local last = ""
@@ -96,6 +101,42 @@ local function request(name, args, response)
 	local r = f(args)
 end
 
+local function encode_token(token)
+	return string.format("%s:%s",
+		crypt.base64encode(token.username),
+		crypt.base64encode(token.password))
+end
+
+
+local function handlerRespone(session, args)
+	
+	if args.cmd == "auth" then
+		if args.step == 1 then
+			auth["challenge"] = crypt.base64decode(args.result)
+			local clientkey = crypt.randomkey()
+			auth.clientkey = clientkey
+			send_request(constant.LOGIN_SERVICE, "auth", {username = username, step = 2, handshake = crypt.base64encode(crypt.dhexchange(clientkey))})
+		elseif args.step == 2 then
+			local secret = crypt.dhsecret(crypt.base64decode(args.result), auth.clientkey)
+			auth.secret = secret
+			local hmac = crypt.hmac64(auth.challenge, auth.secret)
+			auth.hmac = hmac
+			send_request(constant.LOGIN_SERVICE, "auth", {username = username, step = 3, handshake = crypt.base64encode(hmac)})
+		elseif args.step == 3 then
+			local token = {
+				username = username,
+				password = password
+			}
+
+			local etoken = crypt.desencode(auth.secret, encode_token(token))
+			send_request(constant.LOGIN_SERVICE, "auth", {username = username, step = 4, handshake = crypt.base64encode(etoken)})
+
+		else
+
+		end
+	end
+end
+
 local function handler_package(t, ...)
 	if t == "REQUEST" then
 
@@ -105,6 +146,8 @@ local function handler_package(t, ...)
 	else
 		assert(t == "RESPONSE")
 		print_response(...)
+		handlerRespone(...)
+		
 	end
 end
 
@@ -137,28 +180,28 @@ function REQUEST:s2cinfo()
 end
 
 
-function login(username, password)
+-- function login(username, password)
 	
-	send_request("login", { username = username, password = password })
-end
+-- 	send_request("login", { username = username, password = password })
+-- end
 
 
 -- local username = io.read()
 -- print(username)
 
--- print("用户名:")
--- local username = socket.readstdin()
--- while(not username) do
--- 	username = socket.readstdin()
--- 	socket.usleep(100)
--- end
+print("用户名:")
+username = socket.readstdin()
+while(not username) do
+	username = socket.readstdin()
+	socket.usleep(100)
+end
 
--- print("密码:")
--- local password = socket.readstdin()
--- while(not password) do
--- 	password = socket.readstdin()
--- 	socket.usleep(100)
--- end
+print("密码:")
+password = socket.readstdin()
+while(not password) do
+	password = socket.readstdin()
+	socket.usleep(100)
+end
 -- login(username, password)
 
 -- local tt = {
@@ -168,23 +211,28 @@ end
 
 -- send_request("transfer_table",{tt=tt, tti={5,6,7,8}})
 
-send_request("auth")
+--send_request(constant.LOGIN_SERVICE, "auth")
 -- -- print(string.format("client msg fd[%d]", fd))
+-- 
 
-while true do
-	dispatch_package()
-	local cmd = socket.readstdin()
-	if cmd then
-		if cmd == "quit" then
-			send_request("quit")
+
+
+send_request(constant.LOGIN_SERVICE, "auth", {username = username, step = 1, handshake = ""})
+
+local function console()
+	while true do
+		dispatch_package()
+		local cmd = socket.readstdin()
+		if cmd then
+			if cmd == "quit" then
+				send_request("quit")
+			else
+				send_request(cmd)
+			end
 		else
-			send_request(cmd)
+			socket.usleep(100)
 		end
-	else
-		socket.usleep(100)
 	end
 end
 
-while true do
-	socket.usleep(700)
-end
+console()

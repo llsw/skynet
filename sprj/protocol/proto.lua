@@ -91,8 +91,16 @@ cancel_ready 10 {
 }
 
 auth 11{
+	request {
+		username 0 : string
+		step 1 : integer
+		handshake 2 : string
+	}
 	response {
-		info 0 : string
+		cmd 0 : string
+		step 1 : integer
+		error 2 : integer
+		result 3 : string		
 	}
 }
 
