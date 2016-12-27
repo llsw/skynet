@@ -82,7 +82,10 @@ end
 function handler.disconnect(fd)
 	gateserver.closeclient(fd)
 	if connection[fd] then
+		local proxy = cluster.proxy(connection[fd].loginCluster, connection[fd].loginServer)
+		skynet.call(proxy, "lua", "disconnect", fd)
 		connection[fd] = nil
+
 		printI("Client fd[%d] disconnect gateway", fd)
 	end
 end

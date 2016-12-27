@@ -28,23 +28,23 @@ function REQUEST:auth()
 	if step == 1 then
 		printI("Auth step[%d]", step)
 		local challenge = crypt.randomkey()
-		userList[username] = {}
-		userList[username].challenge = challenge
+		userList[fd] = {}
+		userList[fd].challenge = challenge
 		return {cmd = "auth", step = step, error = 0, result = crypt.base64encode(challenge)}
 
 	elseif step == 2 then
 		printI("Auth step[%d]", step)
 		local clientkey = crypt.base64decode(handshake)
-		userList[username].clientkey = clientkey
+		userList[fd].clientkey = clientkey
 		local serverkey = crypt.randomkey()
-		userList[username].serverkey = serverkey
+		userList[fd].serverkey = serverkey
 		return {cmd = "auth", step = step, error = 0, result = crypt.base64encode(crypt.dhexchange(serverkey))}
 
 	elseif step == 3 then
 		printI("Auth step[%d]", step)
-		local secret = crypt.dhsecret(userList[username].clientkey, userList[username].serverkey)
-		userList[username].secret = secret
-		local hmac = crypt.hmac64(userList[username].challenge, secret)
+		local secret = crypt.dhsecret(userList[fd].clientkey, userList[fd].serverkey)
+		userList[fd].secret = secret
+		local hmac = crypt.hmac64(userList[fd].challenge, secret)
 		if hmac ~= crypt.base64decode(handshake) then
 			return {cmd = "auth", step = step, step = step, error =400 , result = "400 Bad Request"}
 		else
@@ -55,26 +55,26 @@ function REQUEST:auth()
 	elseif step == 4 then
 
 		local etoken = handshake
-		userList[username].etoken = etoken
-		local token = crypt.desdecode(userList[username].secret, crypt.base64decode(etoken))
+		userList[fd].etoken = etoken
+		local token = crypt.desdecode(userList[fd].secret, crypt.base64decode(etoken))
 		local user, password = token:match("([^:]+):(.+)")
 		user = crypt.base64decode(user)
 		password = crypt.base64decode(password)
 		internal_id = internal_id + 1
 		local subuid = internal_id
-		userList[username].subuid = subuid
-		userList[username].password = password
-		userList[username].username = user
-		userList[username].fd = fd
-		userList[username].cluster = "cluster_login"
-		userList[username].server = skynet.self()
+		userList[fd].subuid = subuid
+		userList[fd].password = password
+		userList[fd].username = user
+		userList[fd].fd = fd
+		userList[fd].cluster = "cluster_login"
+		userList[fd].server = skynet.self()
 
 		local sql = string.format("select * from user where username='%s' and password='%s'", user, password)
 		printI("Launch sql[%s]", sql)
 		local res = mysql_query(sql)
 		if #res > 0 then
 			local proxy = cluster.proxy("cluster_gateway", ".gateway")
-			skynet.call(proxy, "lua", "logined", userList[username])
+			skynet.call(proxy, "lua", "logined", userList[fd])
 			return {cmd = "auth", step = step, error = 0, result = crypt.base64encode(subuid)}
 		else
 			return {cmd = "auth", step = step, error = 1 , result = "Username or Password error"}
@@ -102,6 +102,10 @@ function CMD.clientMsg(fd, msg, sz)
 	local ret = handlerMsg(fd, host:dispatch(msg, sz))
 	
 	return ret 
+end
+
+function CMD.disconnect(fd)
+	userList[fd] = nil
 end
 
 skynet.start(function()
