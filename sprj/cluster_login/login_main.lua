@@ -24,7 +24,8 @@ skynet.start(function ()
 	end
 	local debug_port = skynet.getenv "debug_port"
 	skynet.newservice("debug_console",debug_port)
-
+	
+	skynet.uniqueservice("database")
 	skynet.newservice("login")
 	skynet.exit()
 

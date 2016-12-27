@@ -11,38 +11,40 @@ local sprotoloader = require "sprotoloader"
 require "skynet.manager"
 local socket = require "socket"
 local crypt = require "crypt"
+local cluster = require "cluster"
 
 local CMD = {}
 local REQUEST = {}
 local host = sprotoloader.load(1):host "package"
 local send_request = host:attach(sprotoloader.load(2))
-local user = {}
+local userList = {}
 local internal_id = 0
 
 function REQUEST:auth()
 	local step = self.step
 	local username = self.username
 	local handshake = self.handshake
+	local fd = self.fd
 	if step == 1 then
 		printI("Auth step[%d]", step)
 		local challenge = crypt.randomkey()
-		user.username = {}
-		user.username.challenge = challenge
+		userList[username] = {}
+		userList[username].challenge = challenge
 		return {cmd = "auth", step = step, error = 0, result = crypt.base64encode(challenge)}
 
 	elseif step == 2 then
 		printI("Auth step[%d]", step)
 		local clientkey = crypt.base64decode(handshake)
-		user.username.clientkey = clientkey
+		userList[username].clientkey = clientkey
 		local serverkey = crypt.randomkey()
-		user.username.serverkey = serverkey
+		userList[username].serverkey = serverkey
 		return {cmd = "auth", step = step, error = 0, result = crypt.base64encode(crypt.dhexchange(serverkey))}
 
 	elseif step == 3 then
 		printI("Auth step[%d]", step)
-		local secret = crypt.dhsecret(user.username.clientkey, user.username.serverkey)
-		user.username.secret = secret
-		local hmac = crypt.hmac64(user.username.challenge, secret)
+		local secret = crypt.dhsecret(userList[username].clientkey, userList[username].serverkey)
+		userList[username].secret = secret
+		local hmac = crypt.hmac64(userList[username].challenge, secret)
 		if hmac ~= crypt.base64decode(handshake) then
 			return {cmd = "auth", step = step, step = step, error =400 , result = "400 Bad Request"}
 		else
@@ -53,17 +55,31 @@ function REQUEST:auth()
 	elseif step == 4 then
 
 		local etoken = handshake
-		user.username.etoken = etoken
-		local token = crypt.desdecode(user.username.secret, crypt.base64decode(etoken))
+		userList[username].etoken = etoken
+		local token = crypt.desdecode(userList[username].secret, crypt.base64decode(etoken))
 		local user, password = token:match("([^:]+):(.+)")
 		user = crypt.base64decode(user)
 		password = crypt.base64decode(password)
 		internal_id = internal_id + 1
 		local subuid = internal_id
-		user.username.subuid = subuid
-		user.username.password = password
+		userList[username].subuid = subuid
+		userList[username].password = password
+		userList[username].username = user
+		userList[username].fd = fd
+		userList[username].cluster = "cluster_login"
+		userList[username].server = skynet.self()
 
-		return {cmd = "auth", step = step, error = 0, result = crypt.base64encode(subuid)}
+		local sql = string.format("select * from user where username='%s' and password='%s'", user, password)
+		printI("Launch sql[%s]", sql)
+		local res = mysql_query(sql)
+		if #res > 0 then
+			local proxy = cluster.proxy("cluster_gateway", ".gateway")
+			skynet.call(proxy, "lua", "logined", userList[username])
+			return {cmd = "auth", step = step, error = 0, result = crypt.base64encode(subuid)}
+		else
+			return {cmd = "auth", step = step, error = 1 , result = "Username or Password error"}
+		end
+		
 
 	else
 
@@ -72,8 +88,9 @@ function REQUEST:auth()
 	end
 end
 
-local function handlerMsg(type, name ,args, respone)
+local function handlerMsg(fd, type, name, args, respone)
 	local f = assert(REQUEST[name])
+	args.fd = fd 
 	if type == "REQUEST" then
 		if respone then
 			local ret = respone(f(args))
@@ -82,8 +99,7 @@ local function handlerMsg(type, name ,args, respone)
 	end	
 end
 function CMD.clientMsg(fd, msg, sz)
-
-	local ret = handlerMsg(host:dispatch(msg, sz))
+	local ret = handlerMsg(fd, host:dispatch(msg, sz))
 	
 	return ret 
 end

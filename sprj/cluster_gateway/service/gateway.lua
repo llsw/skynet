@@ -39,7 +39,7 @@ local function forword(code, fd, msg, sz)
 		
 		printI("Forword cluster_name[%s] fd[%d]", cluster_name, fd)
 		local proxy = cluster.proxy(cluster_name, cluster_code[cluster_name].SERVICE)
-		local ret = skynet.call(proxy, "lua", "clientMsg", conefd, msg, sz)
+		local ret = skynet.call(proxy, "lua", "clientMsg", fd, msg, sz)
 		send_package(fd, ret)
 	else
 		if not connection[fd].auth then
@@ -72,8 +72,9 @@ function handler.connect(fd, addr)
 	connection[fd] = {
 		auth = false,
 		session = session,
-		loginServerName = nil,
-		uid = nil,
+		loginCluster = nil,
+		loginServer = nil,
+		subuid = nil,
 	}
 	printI("Client fd[%d] connect gateway", fd)
 end
@@ -95,18 +96,17 @@ function handler.warning(fd, size)
 end
 
 local CMD = {}
-function CMD.logined(fd, loginServerName, uid)
-	connection[fd]={
-		auth = true,
-		loginServerName = loginServerName,
-		uid = uid,
-	}
+function CMD.logined(client)
+	connection[client.fd].auth = true
+	connection[client.fd].loginCluster = client.cluster
+	connection[client.fd].loginServer = client.server
+	connection[client.fd].subuid = client.subuid
 end
 	
 
 function handler.command(cmd, source, ...)
 	local f = assert(CMD[cmd])
-	return f(source, ...)
+	return f(...)
 end
 
 gateserver.start(handler)
