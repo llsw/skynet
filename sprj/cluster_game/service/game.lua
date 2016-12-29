@@ -39,17 +39,19 @@ function CMD.clientMsg(fd, msg, sz)
 	return ret 
 end
 
-for i = 1, maxRoomNum do
-	local room = skynet.newservice("room")
-	queue.push(room_pool, room)
-	skynet.name(".room" .. i , room)
-end
+
 
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, cmd, ...)
 		local f = assert(CMD[cmd], cmd .. "not found")
 		skynet.retpack(f(...))
 	end)
+	
+	for i = 1, maxRoomNum do
+		local room = skynet.newservice("room")
+		queue.push(room_pool, room)
+		skynet.name(".room" .. i , room)
+	end
 
 	skynet.register(".game")
 end)
