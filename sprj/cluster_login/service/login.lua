@@ -18,6 +18,7 @@ local REQUEST = {}
 local host = sprotoloader.load(1):host "package"
 local send_request = host:attach(sprotoloader.load(2))
 local userList = {}
+local loginedUser = {}
 local internal_id = 0
 
 function REQUEST:auth()
@@ -25,6 +26,17 @@ function REQUEST:auth()
 	local username = self.username
 	local handshake = self.handshake
 	local fd = self.fd
+
+--[[
+	 logout already logined user
+--]]
+	if loginedUser[username] ~= nil then
+		local proxy = cluster.proxy("cluster_gateway", ".gateway")
+		skynet.call(proxy, "lua", "logout", loginedUser[username])
+		userList[loginedUser[username]] = nil
+		loginedUser[username] = nil
+	end
+
 	if step == 1 then
 		printI("Auth step[%d]", step)
 		local challenge = crypt.randomkey()
@@ -74,7 +86,8 @@ function REQUEST:auth()
 		local res = mysql_query(sql)
 		if #res > 0 then
 			local proxy = cluster.proxy("cluster_gateway", ".gateway")
-			skynet.call(proxy, "lua", "logined", userList[fd])
+			skynet.call(proxy, "lua", "login", userList[fd])
+			loginedUser[user] = fd
 			return {cmd = "auth", step = step, error = 0, result = crypt.base64encode(subuid)}
 		else
 			return {cmd = "auth", step = step, error = 1 , result = "Username or Password error"}
@@ -104,8 +117,13 @@ function CMD.clientMsg(fd, msg, sz)
 	return ret 
 end
 
-function CMD.disconnect(fd)
-	userList[fd] = nil
+function CMD.disconnect(fd, username)
+	if fd then
+		userList[fd] = nil
+	end
+	if username then
+		loginedUser[username] = nil
+	end
 end
 
 skynet.start(function()

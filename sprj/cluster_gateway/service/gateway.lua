@@ -36,7 +36,6 @@ end
 local function forword(code, fd, msg, sz)
 	local cluster_name = getClusterName(code)
 	if code == 2 then
-		
 		printI("Forword cluster_name[%s] fd[%d]", cluster_name, fd)
 		local proxy = cluster.proxy(cluster_name, cluster_code[cluster_name].SERVICE)
 		local ret = skynet.call(proxy, "lua", "clientMsg", fd, msg, sz)
@@ -70,6 +69,7 @@ function handler.connect(fd, addr)
 	gateserver.openclient(fd)
 	session = session + 1
 	connection[fd] = {
+		username = nil,
 		auth = false,
 		session = session,
 		loginCluster = nil,
@@ -80,14 +80,16 @@ function handler.connect(fd, addr)
 end
 
 function handler.disconnect(fd)
-	gateserver.closeclient(fd)
-	if connection[fd] then
-		local proxy = cluster.proxy(connection[fd].loginCluster, connection[fd].loginServer)
-		skynet.call(proxy, "lua", "disconnect", fd)
-		connection[fd] = nil
-
-		printI("Client fd[%d] disconnect gateway", fd)
+	--gateserver.closeclient(fd)
+	if connection[fd] ~= nil then
+		if connection[fd].loginCluster and  connection[fd].loginServer and connection[fd].username then
+			local proxy = cluster.proxy(connection[fd].loginCluster, connection[fd].loginServer)
+			skynet.call(proxy, "lua", "disconnect", fd, connection[fd].username)
+			connection[fd] = nil		
+		end
+		
 	end
+	printI("Client fd[%d] disconnect gateway", fd)
 end
 
 function handler.error(fd, msg)
@@ -99,11 +101,19 @@ function handler.warning(fd, size)
 end
 
 local CMD = {}
-function CMD.logined(client)
+
+function CMD.login(client)
+	connection[client.fd].username = client.username
 	connection[client.fd].auth = true
 	connection[client.fd].loginCluster = client.cluster
 	connection[client.fd].loginServer = client.server
 	connection[client.fd].subuid = client.subuid
+end
+
+function CMD.logout(fd)
+	connection[fd] = nil
+	gateserver.closeclient(fd)
+	printI("Client fd[%d] disconnect gateway", fd)
 end
 	
 

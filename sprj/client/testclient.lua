@@ -31,6 +31,7 @@ local coroutine = require "skynet.coroutine"
 local auth_co
 local username
 local password
+local stat = false
 
 local function send_package(code, fd, pack)
 	pack = tool.intToWord(code) .. pack
@@ -111,18 +112,18 @@ end
 local function handlerRespone(session, args)
 	
 	if args.cmd == "auth" then
-		if args.step == 1 then
+		if args.step == 1 and args.error == 0 then
 			auth["challenge"] = crypt.base64decode(args.result)
 			local clientkey = crypt.randomkey()
 			auth.clientkey = clientkey
 			send_request(constant.LOGIN_SERVICE, "auth", {username = username, step = 2, handshake = crypt.base64encode(crypt.dhexchange(clientkey))})
-		elseif args.step == 2 then
+		elseif args.step == 2 and args.error == 0 then
 			local secret = crypt.dhsecret(crypt.base64decode(args.result), auth.clientkey)
 			auth.secret = secret
 			local hmac = crypt.hmac64(auth.challenge, auth.secret)
 			auth.hmac = hmac
 			send_request(constant.LOGIN_SERVICE, "auth", {username = username, step = 3, handshake = crypt.base64encode(hmac)})
-		elseif args.step == 3 then
+		elseif args.step == 3 and args.error == 0 then
 			local token = {
 				username = username,
 				password = password
@@ -130,6 +131,9 @@ local function handlerRespone(session, args)
 
 			local etoken = crypt.desencode(auth.secret, encode_token(token))
 			send_request(constant.LOGIN_SERVICE, "auth", {username = username, step = 4, handshake = crypt.base64encode(etoken)})
+		elseif args.step == 4 and args.error == 0 then
+			send_request(constant.HALL_SERVICE, "hall_in", {username = username})
+		elseif args.error ~= 0 then
 
 		else
 

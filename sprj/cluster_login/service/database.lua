@@ -7,7 +7,7 @@ local CMD = {}
 
 function CMD.redis_query(args, dbn)
 
-	local redispool = cluster.proxy("cluster_database", "redispool")
+	local redispool = cluster.proxy("cluster_database", ".redispool")
 
 	local cmd = assert(args[1])
 	args[1] = dbn
@@ -15,7 +15,7 @@ function CMD.redis_query(args, dbn)
 end
 
 function CMD.mysql_query(sql, dbn)
-	local mysqlpool = cluster.proxy("cluster_database", "mysqlpool")
+	local mysqlpool = cluster.proxy("cluster_database", ".mysqlpool")
 	return skynet.call(mysqlpool, "lua", "execute", sql, dbn)
 end
 

@@ -104,6 +104,16 @@ auth 11{
 	}
 }
 
+hall_in 12{
+	request {
+		username 0 : string
+	}
+	response {
+		nickname 0 : string
+		level 1 : integer	
+	}	
+}
+
 ]]
 
 proto.s2c = sprotoparser.parse [[

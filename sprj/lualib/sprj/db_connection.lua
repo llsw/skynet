@@ -174,11 +174,11 @@ end
 local function addConnect(dbcP)
 	local old_totalNum = dbcP.totalNum
 	dbcP.totalNum = dbcP.totalNum + dbcP.addNum
-	queue.setMaxLen(dbcPool.pool, dbcP.totalNum)
+	queue.setMaxLen(dbcP.pool, dbcP.totalNum)
 	local count = 0
 	for i = 1, dbcP.addNum do
-		local db = mysql.connect(self.conf)
-		if db ~= nil and lock(pushPool, self.pool, db, self.lock) == 1 then
+		local db = mysql.connect(dbcP.conf)
+		if db ~= nil and lock(pushPool, dbcP.pool, db, dbcP.lock) == 1 then
 			printE("MySQL addConnect[%d] to pool is fail!", i)
 		else
 			count = count + 1

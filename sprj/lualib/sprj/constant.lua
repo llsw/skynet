@@ -6,4 +6,6 @@ local constent = {}
 	constent["DATABASE_SERVICE"] = 3
 	constent["ROOM_SERVICE"] = 4
 	constent["CENTER_SERVICE"] = 5
+	constent["HALL_SERVICE"] = 6
+
 return constent

@@ -35,4 +35,8 @@ service_config["gateway_config"] = {
 	nodelay = true,
 }
 
+service_config["game_room_config"] = {
+	maxRoomNum = 10,
+}
+
 return service_config

@@ -1,0 +1,187 @@
+[INFO] 2016-12-29 10:01:53 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 10:02:10 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 10:02:16 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 10:02:16 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 10:02:16 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 10:02:16 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:05:29 [gateway] [./sprj/util/util.lua:13] Client fd[8] connect gateway
+[INFO] 2016-12-29 11:05:35 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[8]
+[INFO] 2016-12-29 11:05:35 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[8]
+[INFO] 2016-12-29 11:05:35 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[8]
+[INFO] 2016-12-29 11:05:35 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[8]
+[INFO] 2016-12-29 11:13:11 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:13:25 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:13:31 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:13:31 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:13:31 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:13:31 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:13:40 [gateway] [./sprj/util/util.lua:13] Client fd[8] connect gateway
+[INFO] 2016-12-29 11:13:45 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[8]
+[INFO] 2016-12-29 11:13:45 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 11:13:45 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[8]
+[INFO] 2016-12-29 11:13:45 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[8]
+[INFO] 2016-12-29 11:13:45 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[8]
+[INFO] 2016-12-29 11:23:33 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:25:27 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:25:32 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:25:32 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:25:32 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:25:32 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:26:48 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:26:51 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:26:58 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:26:58 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:26:58 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:26:58 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:32:08 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:32:34 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:32:45 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:32:51 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:32:51 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:32:51 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:32:51 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:33:19 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:33:24 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:33:29 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:33:29 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:33:29 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:33:29 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:33:30 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 11:33:30 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 11:34:59 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:35:01 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:35:07 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:35:07 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:35:07 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:35:07 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:37:53 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:37:55 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:37:59 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:37:59 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:37:59 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:37:59 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:38:46 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 11:38:46 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 11:42:12 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:42:17 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:42:21 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:42:21 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:42:21 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:42:21 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:42:22 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 11:42:22 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 11:49:02 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:49:06 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:49:11 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:49:11 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:49:11 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:49:11 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:49:13 [gateway] [./sprj/util/util.lua:13] table
+[INFO] 2016-12-29 11:49:13 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 11:49:13 [gateway] [./sprj/util/util.lua:13] table
+[INFO] 2016-12-29 11:49:13 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 11:51:21 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:51:26 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:51:35 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:51:35 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:51:35 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:51:35 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:51:42 [gateway] [./sprj/util/util.lua:13] table
+[INFO] 2016-12-29 11:51:42 [gateway] [./sprj/util/util.lua:13] table
+[INFO] 2016-12-29 11:55:18 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 11:55:20 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 11:55:25 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:55:25 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:55:25 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:55:25 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 11:55:27 [gateway] [./sprj/util/util.lua:13] table
+[INFO] 2016-12-29 11:55:27 [gateway] [./sprj/util/util.lua:13] tessfsdafsdafsad
+[INFO] 2016-12-29 11:55:27 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 11:55:27 [gateway] [./sprj/util/util.lua:13] table
+[INFO] 2016-12-29 11:55:27 [gateway] [./sprj/util/util.lua:13] tessfsdafsdafsad
+[INFO] 2016-12-29 11:55:27 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 12:01:53 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 12:02:01 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 12:02:08 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 12:02:08 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 12:02:08 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 12:02:08 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 12:02:08 [gateway] [./sprj/util/util.lua:13] table
+[INFO] 2016-12-29 12:02:08 [gateway] [./sprj/util/util.lua:13] tessfsdafsdafsad
+[INFO] 2016-12-29 12:02:08 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 13:44:25 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 13:44:30 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 13:44:31 [gateway] [./sprj/util/util.lua:13] table
+[INFO] 2016-12-29 13:51:15 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 13:51:21 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 13:51:22 [gateway] [./sprj/util/util.lua:13] table
+[INFO] 2016-12-29 13:51:22 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 13:52:41 [gateway] [./sprj/util/util.lua:13] Client fd[6] connect gateway
+[INFO] 2016-12-29 13:52:44 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[6]
+[INFO] 2016-12-29 13:52:44 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[6]
+[INFO] 2016-12-29 13:52:44 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[6]
+[INFO] 2016-12-29 13:52:44 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[6]
+[INFO] 2016-12-29 15:00:34 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 15:00:38 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 15:00:47 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 15:00:47 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 15:00:47 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 15:00:47 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:02:06 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 16:02:48 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 16:02:57 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:02:57 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:02:57 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:02:57 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:02:57 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_hall] fd[5]
+[INFO] 2016-12-29 16:03:32 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 16:03:39 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 16:03:45 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:03:45 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:03:45 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:03:45 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:03:45 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_hall] fd[5]
+[INFO] 2016-12-29 16:08:38 [gateway] [./sprj/util/util.lua:13] Client fd[9] connect gateway
+[INFO] 2016-12-29 16:08:43 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[9]
+[INFO] 2016-12-29 16:08:43 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 16:08:43 [gateway] [./sprj/util/util.lua:13] Client fd[5] disconnect gateway
+[INFO] 2016-12-29 16:08:43 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[9]
+[INFO] 2016-12-29 16:08:43 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[9]
+[INFO] 2016-12-29 16:08:43 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[9]
+[INFO] 2016-12-29 16:08:43 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_hall] fd[9]
+[INFO] 2016-12-29 16:23:36 [gateway] [./sprj/util/util.lua:13] Client fd[10] connect gateway
+[INFO] 2016-12-29 16:23:42 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[10]
+[INFO] 2016-12-29 16:23:42 [gateway] [./sprj/util/util.lua:13] Client fd[9] disconnect gateway
+[INFO] 2016-12-29 16:23:42 [gateway] [./sprj/util/util.lua:13] Client fd[9] disconnect gateway
+[INFO] 2016-12-29 16:23:42 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[10]
+[INFO] 2016-12-29 16:23:42 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[10]
+[INFO] 2016-12-29 16:23:42 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[10]
+[INFO] 2016-12-29 16:23:42 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_hall] fd[10]
+[INFO] 2016-12-29 16:35:03 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 16:35:21 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 16:35:26 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:35:26 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:35:26 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:35:26 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:35:26 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_hall] fd[5]
+[INFO] 2016-12-29 16:56:17 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 16:56:25 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 16:56:30 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:56:30 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:56:30 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:56:30 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:56:30 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_hall] fd[5]
+[INFO] 2016-12-29 16:58:20 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 16:58:25 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 16:58:30 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:58:30 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:58:30 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:58:30 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 16:58:30 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_hall] fd[5]
+[INFO] 2016-12-29 16:59:47 [gateway] [./sprj/util/util.lua:13] Gateway open source[8]
+[INFO] 2016-12-29 16:59:59 [gateway] [./sprj/util/util.lua:13] Client fd[5] connect gateway
+[INFO] 2016-12-29 17:00:05 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 17:00:05 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 17:00:05 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 17:00:05 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_login] fd[5]
+[INFO] 2016-12-29 17:00:05 [gateway] [./sprj/util/util.lua:13] Forword cluster_name[cluster_hall] fd[5]

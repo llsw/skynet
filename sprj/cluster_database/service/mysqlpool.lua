@@ -42,5 +42,5 @@ skynet.start(function()
 		skynet.retpack(f(...))
 	end)
 
-	skynet.register("mysqlpool")
+	skynet.register(".mysqlpool")
 end)
