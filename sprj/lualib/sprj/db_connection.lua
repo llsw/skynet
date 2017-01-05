@@ -245,8 +245,6 @@ function dbcPool:get()
 			return nil
 		else
 			printI("MySQL getDB success")
-			self.usedNum = self.usedNum + 1
-
 			if  self.usedNum >= (self.threshold * self.totalNum) then
 				skynet.fork(addConnect, self)
 			end

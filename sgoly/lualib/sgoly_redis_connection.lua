@@ -9,8 +9,9 @@
 local skynet = require "skynet"
 local skynet_queue = require "skynet.queue"
 local lock = skynet_queue()
-local queue = require "sprj.queue"
+local queue = require "sgoly_queue"
 local redis = require "redis"
+require "sgoly_printf"
 --!
 --! @brief      类模板
 --!

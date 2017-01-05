@@ -1,6 +1,6 @@
 
 --[[
- * @brief: redis_connection.lua
+ * @brief: db_connetction.lua
 
  * @author:	  kun si
  * @date:	2016-12-20
@@ -9,14 +9,15 @@
 local skynet = require "skynet"
 local skynet_queue = require "skynet.queue"
 local lock = skynet_queue()
-local queue = require "sprj.queue"
-local redis = require "redis"
+local queue = require "sgoly_queue"
+local mysql = require "mysql"
+require "sgoly_printf"
 --!
 --! @brief      类模板
 --!
 --! @param      父类
 --!
---! @return     基类
+--! @return     类模板
 --!
 --! @author     云风
 --! 
@@ -135,8 +136,8 @@ local function ping(pool, time)
 	while true do
 		for k, v in pairs(pool) do
 			if type(v) == "table" then
-				v:keys("*")
-				printI("Activity Redis DBC[%d]", k)
+				v:query("select 1")
+				printI("Activity MySQL DBC[%d]", k)
 			end
 		end
 		skynet.sleep(time * 100)
@@ -172,18 +173,18 @@ end
 local function addConnect(dbcP)
 	local old_totalNum = dbcP.totalNum
 	dbcP.totalNum = dbcP.totalNum + dbcP.addNum
-	queue.setMaxLen(dbcPool.pool, dbcP.totalNum)
+	queue.setMaxLen(dbcP.pool, dbcP.totalNum)
 	local count = 0
 	for i = 1, dbcP.addNum do
-		local db = redis.connect(self.conf)
-		if db ~= nil and lock(pushPool, self.pool, db, self.lock) == 1 then
-			printE("AddConnect Redis DBC[%d] to pool is fail!", i)
+		local db = mysql.connect(dbcP.conf)
+		if db ~= nil and lock(pushPool, dbcP.pool, db, dbcP.lock) == 1 then
+			printE("MySQL addConnect[%d] to pool is fail!", i)
 		else
 			count = count + 1
 		end
 	end
 	dbcP.totalNum = dbcP.totalNum + count
-	printI("Redis DBPool real totalNum is [%d]", dbcP.totalNum)
+	printI("MySQL DBPool real totalNum is [%d]", dbcP.totalNum)
 end
 
 --!
@@ -206,12 +207,12 @@ function dbcPool:init(dbConf)
 	self.lock = false
 	local count = 0
 	for i = 1 , self.totalNum do
-		local db = redis.connect(dbConf)
+		local db = mysql.connect(dbConf)
 		if not db then
-			printE("Create Redis DBC[%d] fail", i)
+			printE("Create MySQL DBC[%d] fail", i)
 		else
 			if lock(pushPool, self.pool, db, self.lock) == 1 then
-				printE("Redis DBPool if full")
+				printE("MySQL DBPool if full")
 				break
 			else
 				count = count + 1
@@ -219,7 +220,7 @@ function dbcPool:init(dbConf)
 			end
 		end
 	end
-	printI("Redis DBPool useful is %d", count)
+	printI("MySQL DBPool useful is %d", count)
 	self:ping()
 end
 
@@ -233,16 +234,16 @@ end
 --!
 function dbcPool:get()
 	if queue.isEmpty(self.pool) then
-		printE("Redis getDBC fail. DBPool is empty!")
+		printE("MySQL getDB fail. DBPool is empty!")
 		return nil
 	else
 		local db = lock(popPool, self.pool, self.lock)
 
 		if db == 1 then
-			printE("Redis getDBC fail")
+			printE("MySQL getDB fail")
 			return nil
 		else
-			printI("Redis getDBC success")
+			printI("MySQL getDB success")
 			if  self.usedNum >= (self.threshold * self.totalNum) then
 				skynet.fork(addConnect, self)
 			end
@@ -264,7 +265,7 @@ end
 --!
 function dbcPool:free(db)
 	if lock(pushPool, self.pool, db, self.lock) == 1 then
-		printE("Redis DBPool if full")
+		printE("MySQL DBPool if full")
 	else
 		self.usedNum = self.usedNum - 1
 	end
