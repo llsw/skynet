@@ -8,7 +8,7 @@
 
 --[[
 	命名方式：节点名_自定义_config
-	使用方法: local service_config = require "service_config"
+	使用方法: local service_config = require "sgoly_service_config"
 	local config = service_config.节点名_自定义_config
 --]]
 
